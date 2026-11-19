@@ -1,0 +1,1741 @@
+{
+  "updated": "2026-11-19",
+  "leagues": [
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "short": "Premier League",
+      "country": "England",
+      "season": "2026-27",
+      "round": "Matchweek 10",
+      "next_round": "Matchweek 11 — 21–23 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "table": [
+        {
+          "pos": 1,
+          "team": "Arsenal",
+          "p": 10,
+          "w": 9,
+          "d": 0,
+          "l": 1,
+          "gf": 15,
+          "ga": 5,
+          "gd": 10,
+          "pts": 27
+        },
+        {
+          "pos": 2,
+          "team": "Brighton & Hove Albion",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 26,
+          "ga": 7,
+          "gd": 19,
+          "pts": 22
+        },
+        {
+          "pos": 3,
+          "team": "Manchester City",
+          "p": 10,
+          "w": 7,
+          "d": 0,
+          "l": 3,
+          "gf": 21,
+          "ga": 13,
+          "gd": 8,
+          "pts": 21
+        },
+        {
+          "pos": 4,
+          "team": "Liverpool",
+          "p": 10,
+          "w": 5,
+          "d": 3,
+          "l": 2,
+          "gf": 14,
+          "ga": 10,
+          "gd": 4,
+          "pts": 18
+        },
+        {
+          "pos": 5,
+          "team": "Chelsea",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 19,
+          "ga": 16,
+          "gd": 3,
+          "pts": 16
+        },
+        {
+          "pos": 6,
+          "team": "Everton",
+          "p": 10,
+          "w": 4,
+          "d": 4,
+          "l": 2,
+          "gf": 12,
+          "ga": 10,
+          "gd": 2,
+          "pts": 16
+        },
+        {
+          "pos": 7,
+          "team": "Bournemouth",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 16,
+          "ga": 14,
+          "gd": 2,
+          "pts": 15
+        },
+        {
+          "pos": 8,
+          "team": "Brentford",
+          "p": 10,
+          "w": 3,
+          "d": 5,
+          "l": 2,
+          "gf": 16,
+          "ga": 11,
+          "gd": 5,
+          "pts": 14
+        },
+        {
+          "pos": 9,
+          "team": "Leeds United",
+          "p": 10,
+          "w": 3,
+          "d": 5,
+          "l": 2,
+          "gf": 10,
+          "ga": 8,
+          "gd": 2,
+          "pts": 14
+        },
+        {
+          "pos": 10,
+          "team": "Aston Villa",
+          "p": 10,
+          "w": 3,
+          "d": 4,
+          "l": 3,
+          "gf": 14,
+          "ga": 17,
+          "gd": -3,
+          "pts": 13
+        },
+        {
+          "pos": 11,
+          "team": "Tottenham Hotspur",
+          "p": 10,
+          "w": 3,
+          "d": 3,
+          "l": 4,
+          "gf": 10,
+          "ga": 11,
+          "gd": -1,
+          "pts": 12
+        },
+        {
+          "pos": 12,
+          "team": "Newcastle United",
+          "p": 10,
+          "w": 3,
+          "d": 3,
+          "l": 4,
+          "gf": 13,
+          "ga": 16,
+          "gd": -3,
+          "pts": 12
+        },
+        {
+          "pos": 13,
+          "team": "Hull City",
+          "p": 10,
+          "w": 2,
+          "d": 5,
+          "l": 3,
+          "gf": 11,
+          "ga": 11,
+          "gd": 0,
+          "pts": 11
+        },
+        {
+          "pos": 14,
+          "team": "Ipswich Town",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 15,
+          "ga": 20,
+          "gd": -5,
+          "pts": 11
+        },
+        {
+          "pos": 15,
+          "team": "Fulham",
+          "p": 10,
+          "w": 2,
+          "d": 4,
+          "l": 4,
+          "gf": 10,
+          "ga": 12,
+          "gd": -2,
+          "pts": 10
+        },
+        {
+          "pos": 16,
+          "team": "Nottingham Forest",
+          "p": 10,
+          "w": 2,
+          "d": 3,
+          "l": 5,
+          "gf": 9,
+          "ga": 13,
+          "gd": -4,
+          "pts": 9
+        },
+        {
+          "pos": 17,
+          "team": "Coventry City",
+          "p": 10,
+          "w": 3,
+          "d": 0,
+          "l": 7,
+          "gf": 10,
+          "ga": 19,
+          "gd": -9,
+          "pts": 9
+        },
+        {
+          "pos": 18,
+          "team": "Manchester United",
+          "p": 10,
+          "w": 1,
+          "d": 5,
+          "l": 4,
+          "gf": 14,
+          "ga": 19,
+          "gd": -5,
+          "pts": 8
+        },
+        {
+          "pos": 19,
+          "team": "Sunderland",
+          "p": 10,
+          "w": 2,
+          "d": 2,
+          "l": 6,
+          "gf": 8,
+          "ga": 17,
+          "gd": -9,
+          "pts": 8
+        },
+        {
+          "pos": 20,
+          "team": "Crystal Palace",
+          "p": 10,
+          "w": 2,
+          "d": 1,
+          "l": 7,
+          "gf": 10,
+          "ga": 24,
+          "gd": -14,
+          "pts": 7
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Erling Haaland",
+          "team": "Manchester City",
+          "goals": 9
+        },
+        {
+          "player": "Alexander Isak",
+          "team": "Liverpool",
+          "goals": 7
+        },
+        {
+          "player": "Thierno Barry",
+          "team": "Everton",
+          "goals": 6
+        },
+        {
+          "player": "Nicolas Jackson",
+          "team": "Aston Villa",
+          "goals": 6
+        },
+        {
+          "player": "Morgan Rogers",
+          "team": "Chelsea",
+          "goals": 5
+        },
+        {
+          "player": "Marcus Tavernier",
+          "team": "Bournemouth",
+          "goals": 5
+        },
+        {
+          "player": "Evanilson",
+          "team": "Bournemouth",
+          "goals": 5
+        },
+        {
+          "player": "Rayan Cherki",
+          "team": "Manchester City",
+          "goals": 5
+        },
+        {
+          "player": "João Pedro",
+          "team": "Chelsea",
+          "goals": 5
+        },
+        {
+          "player": "Bryan Mbeumo",
+          "team": "Manchester United",
+          "goals": 4
+        }
+      ],
+      "meta": "Premier League 2026-27 table: Arsenal lead with 27 points, Brighton & Hove Albion 22, Manchester City 21 — Erling Haaland is the top scorer with 9 goals; Matchweek 11 — 21–23 November 2026 and results."
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "short": "La Liga",
+      "country": "Spain",
+      "season": "2026-27",
+      "round": "Matchweek 12",
+      "next_round": "Matchweek 13 — 20–23 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "table": [
+        {
+          "pos": 1,
+          "team": "FC Barcelona",
+          "p": 12,
+          "w": 11,
+          "d": 0,
+          "l": 1,
+          "gf": 48,
+          "ga": 13,
+          "gd": 35,
+          "pts": 33
+        },
+        {
+          "pos": 2,
+          "team": "Real Madrid",
+          "p": 12,
+          "w": 10,
+          "d": 0,
+          "l": 2,
+          "gf": 31,
+          "ga": 10,
+          "gd": 21,
+          "pts": 30
+        },
+        {
+          "pos": 3,
+          "team": "Atlético Madrid",
+          "p": 12,
+          "w": 9,
+          "d": 1,
+          "l": 2,
+          "gf": 23,
+          "ga": 10,
+          "gd": 13,
+          "pts": 28
+        },
+        {
+          "pos": 4,
+          "team": "Real Betis",
+          "p": 12,
+          "w": 8,
+          "d": 2,
+          "l": 2,
+          "gf": 20,
+          "ga": 15,
+          "gd": 5,
+          "pts": 26
+        },
+        {
+          "pos": 5,
+          "team": "Real Sociedad",
+          "p": 12,
+          "w": 7,
+          "d": 1,
+          "l": 4,
+          "gf": 21,
+          "ga": 20,
+          "gd": 1,
+          "pts": 22
+        },
+        {
+          "pos": 6,
+          "team": "Sevilla FC",
+          "p": 12,
+          "w": 5,
+          "d": 3,
+          "l": 4,
+          "gf": 17,
+          "ga": 19,
+          "gd": -2,
+          "pts": 18
+        },
+        {
+          "pos": 7,
+          "team": "Athletic Bilbao",
+          "p": 11,
+          "w": 4,
+          "d": 4,
+          "l": 3,
+          "gf": 15,
+          "ga": 11,
+          "gd": 4,
+          "pts": 16
+        },
+        {
+          "pos": 8,
+          "team": "Villarreal CF",
+          "p": 12,
+          "w": 4,
+          "d": 3,
+          "l": 5,
+          "gf": 17,
+          "ga": 15,
+          "gd": 2,
+          "pts": 15
+        },
+        {
+          "pos": 9,
+          "team": "Deportivo La Coruña",
+          "p": 12,
+          "w": 3,
+          "d": 6,
+          "l": 3,
+          "gf": 15,
+          "ga": 14,
+          "gd": 1,
+          "pts": 15
+        },
+        {
+          "pos": 10,
+          "team": "Racing Santander",
+          "p": 12,
+          "w": 4,
+          "d": 2,
+          "l": 6,
+          "gf": 17,
+          "ga": 30,
+          "gd": -13,
+          "pts": 14
+        },
+        {
+          "pos": 11,
+          "team": "Celta Vigo",
+          "p": 12,
+          "w": 2,
+          "d": 7,
+          "l": 3,
+          "gf": 10,
+          "ga": 10,
+          "gd": 0,
+          "pts": 13
+        },
+        {
+          "pos": 12,
+          "team": "Deportivo Alavés",
+          "p": 12,
+          "w": 3,
+          "d": 4,
+          "l": 5,
+          "gf": 15,
+          "ga": 17,
+          "gd": -2,
+          "pts": 13
+        },
+        {
+          "pos": 13,
+          "team": "RCD Espanyol",
+          "p": 12,
+          "w": 3,
+          "d": 3,
+          "l": 6,
+          "gf": 13,
+          "ga": 14,
+          "gd": -1,
+          "pts": 12
+        },
+        {
+          "pos": 14,
+          "team": "Rayo Vallecano",
+          "p": 11,
+          "w": 3,
+          "d": 3,
+          "l": 5,
+          "gf": 15,
+          "ga": 21,
+          "gd": -6,
+          "pts": 12
+        },
+        {
+          "pos": 15,
+          "team": "Getafe CF",
+          "p": 12,
+          "w": 3,
+          "d": 3,
+          "l": 6,
+          "gf": 8,
+          "ga": 18,
+          "gd": -10,
+          "pts": 12
+        },
+        {
+          "pos": 16,
+          "team": "CA Osasuna",
+          "p": 12,
+          "w": 3,
+          "d": 3,
+          "l": 6,
+          "gf": 12,
+          "ga": 23,
+          "gd": -11,
+          "pts": 12
+        },
+        {
+          "pos": 17,
+          "team": "Levante UD",
+          "p": 12,
+          "w": 2,
+          "d": 5,
+          "l": 5,
+          "gf": 16,
+          "ga": 21,
+          "gd": -5,
+          "pts": 11
+        },
+        {
+          "pos": 18,
+          "team": "Elche CF",
+          "p": 12,
+          "w": 2,
+          "d": 4,
+          "l": 6,
+          "gf": 14,
+          "ga": 20,
+          "gd": -6,
+          "pts": 10
+        },
+        {
+          "pos": 19,
+          "team": "Valencia CF",
+          "p": 12,
+          "w": 2,
+          "d": 3,
+          "l": 7,
+          "gf": 8,
+          "ga": 20,
+          "gd": -12,
+          "pts": 9
+        },
+        {
+          "pos": 20,
+          "team": "Málaga CF",
+          "p": 12,
+          "w": 0,
+          "d": 5,
+          "l": 7,
+          "gf": 9,
+          "ga": 23,
+          "gd": -14,
+          "pts": 5
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Raphinha",
+          "team": "FC Barcelona",
+          "goals": 15
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "Real Madrid",
+          "goals": 13
+        },
+        {
+          "player": "Lamine Yamal",
+          "team": "FC Barcelona",
+          "goals": 10
+        },
+        {
+          "player": "Yassir Zabiri",
+          "team": "Racing Santander",
+          "goals": 9
+        },
+        {
+          "player": "Ante Budimir",
+          "team": "CA Osasuna",
+          "goals": 8
+        },
+        {
+          "player": "Sergio Camello",
+          "team": "Rayo Vallecano",
+          "goals": 7
+        },
+        {
+          "player": "Fermín López",
+          "team": "FC Barcelona",
+          "goals": 7
+        },
+        {
+          "player": "Roberto Fernández",
+          "team": "RCD Espanyol",
+          "goals": 6
+        },
+        {
+          "player": "Fer Niño",
+          "team": "Elche CF",
+          "goals": 6
+        },
+        {
+          "player": "Álex Baena",
+          "team": "Atlético Madrid",
+          "goals": 5
+        }
+      ],
+      "meta": "La Liga 2026-27 table: FC Barcelona lead with 33 points, Real Madrid 30, Atlético Madrid 28 — Raphinha is the top scorer with 15 goals; Matchweek 13 — 20–23 November 2026 and results."
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "short": "Serie A",
+      "country": "Italy",
+      "season": "2026-27",
+      "round": "Matchweek 11",
+      "next_round": "Matchweek 12 — 21–23 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "table": [
+        {
+          "pos": 1,
+          "team": "SS Lazio",
+          "p": 11,
+          "w": 9,
+          "d": 2,
+          "l": 0,
+          "gf": 25,
+          "ga": 9,
+          "gd": 16,
+          "pts": 29
+        },
+        {
+          "pos": 2,
+          "team": "Inter Milan",
+          "p": 11,
+          "w": 9,
+          "d": 1,
+          "l": 1,
+          "gf": 28,
+          "ga": 13,
+          "gd": 15,
+          "pts": 28
+        },
+        {
+          "pos": 3,
+          "team": "AS Roma",
+          "p": 11,
+          "w": 8,
+          "d": 3,
+          "l": 0,
+          "gf": 31,
+          "ga": 10,
+          "gd": 21,
+          "pts": 27
+        },
+        {
+          "pos": 4,
+          "team": "AC Milan",
+          "p": 11,
+          "w": 7,
+          "d": 3,
+          "l": 1,
+          "gf": 23,
+          "ga": 13,
+          "gd": 10,
+          "pts": 24
+        },
+        {
+          "pos": 5,
+          "team": "Como 1907",
+          "p": 11,
+          "w": 7,
+          "d": 2,
+          "l": 2,
+          "gf": 18,
+          "ga": 10,
+          "gd": 8,
+          "pts": 23
+        },
+        {
+          "pos": 6,
+          "team": "Frosinone Calcio",
+          "p": 11,
+          "w": 6,
+          "d": 2,
+          "l": 3,
+          "gf": 24,
+          "ga": 15,
+          "gd": 9,
+          "pts": 20
+        },
+        {
+          "pos": 7,
+          "team": "Juventus FC",
+          "p": 11,
+          "w": 5,
+          "d": 3,
+          "l": 3,
+          "gf": 15,
+          "ga": 12,
+          "gd": 3,
+          "pts": 18
+        },
+        {
+          "pos": 8,
+          "team": "Bologna FC",
+          "p": 11,
+          "w": 5,
+          "d": 2,
+          "l": 4,
+          "gf": 16,
+          "ga": 14,
+          "gd": 2,
+          "pts": 17
+        },
+        {
+          "pos": 9,
+          "team": "Cagliari Calcio",
+          "p": 11,
+          "w": 5,
+          "d": 1,
+          "l": 5,
+          "gf": 10,
+          "ga": 15,
+          "gd": -5,
+          "pts": 16
+        },
+        {
+          "pos": 10,
+          "team": "SSC Napoli",
+          "p": 11,
+          "w": 4,
+          "d": 3,
+          "l": 4,
+          "gf": 18,
+          "ga": 14,
+          "gd": 4,
+          "pts": 15
+        },
+        {
+          "pos": 11,
+          "team": "Torino FC",
+          "p": 11,
+          "w": 4,
+          "d": 2,
+          "l": 5,
+          "gf": 15,
+          "ga": 17,
+          "gd": -2,
+          "pts": 14
+        },
+        {
+          "pos": 12,
+          "team": "Atalanta BC",
+          "p": 11,
+          "w": 4,
+          "d": 2,
+          "l": 5,
+          "gf": 17,
+          "ga": 20,
+          "gd": -3,
+          "pts": 14
+        },
+        {
+          "pos": 13,
+          "team": "Genoa CFC",
+          "p": 11,
+          "w": 4,
+          "d": 1,
+          "l": 6,
+          "gf": 11,
+          "ga": 16,
+          "gd": -5,
+          "pts": 13
+        },
+        {
+          "pos": 14,
+          "team": "US Lecce",
+          "p": 11,
+          "w": 3,
+          "d": 1,
+          "l": 7,
+          "gf": 12,
+          "ga": 22,
+          "gd": -10,
+          "pts": 10
+        },
+        {
+          "pos": 15,
+          "team": "ACF Fiorentina",
+          "p": 11,
+          "w": 2,
+          "d": 3,
+          "l": 6,
+          "gf": 17,
+          "ga": 25,
+          "gd": -8,
+          "pts": 9
+        },
+        {
+          "pos": 16,
+          "team": "Parma Calcio",
+          "p": 11,
+          "w": 2,
+          "d": 2,
+          "l": 7,
+          "gf": 9,
+          "ga": 17,
+          "gd": -8,
+          "pts": 8
+        },
+        {
+          "pos": 17,
+          "team": "US Sassuolo Calcio",
+          "p": 11,
+          "w": 2,
+          "d": 2,
+          "l": 7,
+          "gf": 16,
+          "ga": 29,
+          "gd": -13,
+          "pts": 8
+        },
+        {
+          "pos": 18,
+          "team": "AC Monza",
+          "p": 11,
+          "w": 2,
+          "d": 1,
+          "l": 8,
+          "gf": 17,
+          "ga": 25,
+          "gd": -8,
+          "pts": 7
+        },
+        {
+          "pos": 19,
+          "team": "Venezia FC",
+          "p": 11,
+          "w": 2,
+          "d": 0,
+          "l": 9,
+          "gf": 8,
+          "ga": 21,
+          "gd": -13,
+          "pts": 6
+        },
+        {
+          "pos": 20,
+          "team": "Udinese Calcio",
+          "p": 11,
+          "w": 1,
+          "d": 2,
+          "l": 8,
+          "gf": 12,
+          "ga": 25,
+          "gd": -13,
+          "pts": 5
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Gustavo Varela",
+          "team": "AC Monza",
+          "goals": 9
+        },
+        {
+          "player": "Antonio Raimondo",
+          "team": "Frosinone Calcio",
+          "goals": 8
+        },
+        {
+          "player": "Donyell Malen",
+          "team": "AS Roma",
+          "goals": 8
+        },
+        {
+          "player": "Nikola Krstovic",
+          "team": "Atalanta BC",
+          "goals": 7
+        },
+        {
+          "player": "Marcus Thuram",
+          "team": "Inter Milan",
+          "goals": 6
+        },
+        {
+          "player": "Giacomo Calo",
+          "team": "Frosinone Calcio",
+          "goals": 5
+        },
+        {
+          "player": "Tasos Douvikas",
+          "team": "Como 1907",
+          "goals": 5
+        },
+        {
+          "player": "Daniel Maldini",
+          "team": "Cagliari Calcio",
+          "goals": 5
+        },
+        {
+          "player": "Adrien Rabiot",
+          "team": "AC Milan",
+          "goals": 5
+        },
+        {
+          "player": "Alphadjo Cissè",
+          "team": "AC Milan",
+          "goals": 5
+        }
+      ],
+      "meta": "Serie A 2026-27 table: SS Lazio lead with 29 points, Inter Milan 28, AS Roma 27 — Gustavo Varela is the top scorer with 9 goals; Matchweek 12 — 21–23 November 2026 and results."
+    },
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "short": "Bundesliga",
+      "country": "Germany",
+      "season": "2026-27",
+      "round": "Matchweek 9",
+      "next_round": "Matchweek 10 — 20–22 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "table": [
+        {
+          "pos": 1,
+          "team": "FC Bayern Munich",
+          "p": 9,
+          "w": 6,
+          "d": 3,
+          "l": 0,
+          "gf": 29,
+          "ga": 9,
+          "gd": 20,
+          "pts": 21
+        },
+        {
+          "pos": 2,
+          "team": "Borussia Dortmund",
+          "p": 9,
+          "w": 6,
+          "d": 3,
+          "l": 0,
+          "gf": 16,
+          "ga": 7,
+          "gd": 9,
+          "pts": 21
+        },
+        {
+          "pos": 3,
+          "team": "SC Freiburg",
+          "p": 9,
+          "w": 6,
+          "d": 1,
+          "l": 2,
+          "gf": 20,
+          "ga": 10,
+          "gd": 10,
+          "pts": 19
+        },
+        {
+          "pos": 4,
+          "team": "RB Leipzig",
+          "p": 9,
+          "w": 6,
+          "d": 0,
+          "l": 3,
+          "gf": 27,
+          "ga": 13,
+          "gd": 14,
+          "pts": 18
+        },
+        {
+          "pos": 5,
+          "team": "Bayer 04 Leverkusen",
+          "p": 9,
+          "w": 5,
+          "d": 1,
+          "l": 3,
+          "gf": 20,
+          "ga": 17,
+          "gd": 3,
+          "pts": 16
+        },
+        {
+          "pos": 6,
+          "team": "SV Werder Bremen",
+          "p": 9,
+          "w": 4,
+          "d": 3,
+          "l": 2,
+          "gf": 17,
+          "ga": 15,
+          "gd": 2,
+          "pts": 15
+        },
+        {
+          "pos": 7,
+          "team": "SV Elversberg",
+          "p": 9,
+          "w": 4,
+          "d": 1,
+          "l": 4,
+          "gf": 17,
+          "ga": 18,
+          "gd": -1,
+          "pts": 13
+        },
+        {
+          "pos": 8,
+          "team": "VfB Stuttgart",
+          "p": 9,
+          "w": 4,
+          "d": 0,
+          "l": 5,
+          "gf": 15,
+          "ga": 15,
+          "gd": 0,
+          "pts": 12
+        },
+        {
+          "pos": 9,
+          "team": "TSG Hoffenheim",
+          "p": 9,
+          "w": 4,
+          "d": 0,
+          "l": 5,
+          "gf": 16,
+          "ga": 17,
+          "gd": -1,
+          "pts": 12
+        },
+        {
+          "pos": 10,
+          "team": "Eintracht Frankfurt",
+          "p": 9,
+          "w": 3,
+          "d": 3,
+          "l": 3,
+          "gf": 15,
+          "ga": 20,
+          "gd": -5,
+          "pts": 12
+        },
+        {
+          "pos": 11,
+          "team": "Hamburger SV",
+          "p": 9,
+          "w": 4,
+          "d": 0,
+          "l": 5,
+          "gf": 10,
+          "ga": 20,
+          "gd": -10,
+          "pts": 12
+        },
+        {
+          "pos": 12,
+          "team": "1. FSV Mainz 05",
+          "p": 9,
+          "w": 3,
+          "d": 1,
+          "l": 5,
+          "gf": 18,
+          "ga": 19,
+          "gd": -1,
+          "pts": 10
+        },
+        {
+          "pos": 13,
+          "team": "SC Paderborn 07",
+          "p": 9,
+          "w": 2,
+          "d": 4,
+          "l": 3,
+          "gf": 8,
+          "ga": 11,
+          "gd": -3,
+          "pts": 10
+        },
+        {
+          "pos": 14,
+          "team": "FC Augsburg",
+          "p": 9,
+          "w": 2,
+          "d": 3,
+          "l": 4,
+          "gf": 20,
+          "ga": 20,
+          "gd": 0,
+          "pts": 9
+        },
+        {
+          "pos": 15,
+          "team": "1. FC Köln",
+          "p": 9,
+          "w": 2,
+          "d": 3,
+          "l": 4,
+          "gf": 10,
+          "ga": 14,
+          "gd": -4,
+          "pts": 9
+        },
+        {
+          "pos": 16,
+          "team": "1. FC Union Berlin",
+          "p": 9,
+          "w": 1,
+          "d": 4,
+          "l": 4,
+          "gf": 7,
+          "ga": 21,
+          "gd": -14,
+          "pts": 7
+        },
+        {
+          "pos": 17,
+          "team": "FC Schalke 04",
+          "p": 9,
+          "w": 1,
+          "d": 3,
+          "l": 5,
+          "gf": 5,
+          "ga": 11,
+          "gd": -6,
+          "pts": 6
+        },
+        {
+          "pos": 18,
+          "team": "Borussia Mönchengladbach",
+          "p": 9,
+          "w": 1,
+          "d": 1,
+          "l": 7,
+          "gf": 12,
+          "ga": 25,
+          "gd": -13,
+          "pts": 4
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Niclas Füllkrug",
+          "team": "SV Werder Bremen",
+          "goals": 9
+        },
+        {
+          "player": "Patrik Schick",
+          "team": "Bayer 04 Leverkusen",
+          "goals": 8
+        },
+        {
+          "player": "Michael Olise",
+          "team": "FC Bayern Munich",
+          "goals": 6
+        },
+        {
+          "player": "Phillip Tietz",
+          "team": "1. FSV Mainz 05",
+          "goals": 6
+        },
+        {
+          "player": "Younes Ebnoutalib",
+          "team": "Eintracht Frankfurt",
+          "goals": 6
+        },
+        {
+          "player": "Jonathan Burkardt",
+          "team": "Eintracht Frankfurt",
+          "goals": 5
+        },
+        {
+          "player": "Ermedin Demirovic",
+          "team": "VfB Stuttgart",
+          "goals": 5
+        },
+        {
+          "player": "Yuito Suzuki",
+          "team": "SC Freiburg",
+          "goals": 5
+        },
+        {
+          "player": "Michael Gregoritsch",
+          "team": "FC Augsburg",
+          "goals": 5
+        },
+        {
+          "player": "Christopher Nkunku",
+          "team": "RB Leipzig",
+          "goals": 5
+        }
+      ],
+      "meta": "Bundesliga 2026-27 table: FC Bayern Munich lead with 21 points, Borussia Dortmund 21, SC Freiburg 19 — Niclas Füllkrug is the top scorer with 9 goals; Matchweek 10 — 20–22 November 2026 and results."
+    },
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "short": "Ligue 1",
+      "country": "France",
+      "season": "2026-27",
+      "round": "Matchweek 10",
+      "next_round": "Matchweek 11 — 20–22 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "table": [
+        {
+          "pos": 1,
+          "team": "Paris Saint-Germain",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 22,
+          "ga": 10,
+          "gd": 12,
+          "pts": 23
+        },
+        {
+          "pos": 2,
+          "team": "Lille OSC",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 14,
+          "ga": 7,
+          "gd": 7,
+          "pts": 21
+        },
+        {
+          "pos": 3,
+          "team": "Paris FC",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 10,
+          "gd": 7,
+          "pts": 20
+        },
+        {
+          "pos": 4,
+          "team": "Olympique de Marseille",
+          "p": 10,
+          "w": 6,
+          "d": 0,
+          "l": 4,
+          "gf": 22,
+          "ga": 14,
+          "gd": 8,
+          "pts": 18
+        },
+        {
+          "pos": 5,
+          "team": "Olympique Lyonnais",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 15,
+          "ga": 9,
+          "gd": 6,
+          "pts": 17
+        },
+        {
+          "pos": 6,
+          "team": "OGC Nice",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 15,
+          "ga": 12,
+          "gd": 3,
+          "pts": 17
+        },
+        {
+          "pos": 7,
+          "team": "AS Monaco",
+          "p": 10,
+          "w": 4,
+          "d": 4,
+          "l": 2,
+          "gf": 13,
+          "ga": 11,
+          "gd": 2,
+          "pts": 16
+        },
+        {
+          "pos": 8,
+          "team": "Stade Rennais",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 21,
+          "ga": 21,
+          "gd": 0,
+          "pts": 16
+        },
+        {
+          "pos": 9,
+          "team": "Brest",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 18,
+          "ga": 12,
+          "gd": 6,
+          "pts": 15
+        },
+        {
+          "pos": 10,
+          "team": "FC Lorient",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 9,
+          "ga": 8,
+          "gd": 1,
+          "pts": 15
+        },
+        {
+          "pos": 11,
+          "team": "RC Lens",
+          "p": 10,
+          "w": 4,
+          "d": 1,
+          "l": 5,
+          "gf": 17,
+          "ga": 15,
+          "gd": 2,
+          "pts": 13
+        },
+        {
+          "pos": 12,
+          "team": "Toulouse FC",
+          "p": 10,
+          "w": 3,
+          "d": 4,
+          "l": 3,
+          "gf": 15,
+          "ga": 14,
+          "gd": 1,
+          "pts": 13
+        },
+        {
+          "pos": 13,
+          "team": "RC Strasbourg Alsace",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 18,
+          "ga": 22,
+          "gd": -4,
+          "pts": 10
+        },
+        {
+          "pos": 14,
+          "team": "AJ Auxerre",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 13,
+          "ga": 24,
+          "gd": -11,
+          "pts": 10
+        },
+        {
+          "pos": 15,
+          "team": "Le Mans FC",
+          "p": 10,
+          "w": 1,
+          "d": 5,
+          "l": 4,
+          "gf": 12,
+          "ga": 19,
+          "gd": -7,
+          "pts": 8
+        },
+        {
+          "pos": 16,
+          "team": "Angers SCO",
+          "p": 10,
+          "w": 2,
+          "d": 2,
+          "l": 6,
+          "gf": 9,
+          "ga": 19,
+          "gd": -10,
+          "pts": 8
+        },
+        {
+          "pos": 17,
+          "team": "ESTAC Troyes",
+          "p": 10,
+          "w": 2,
+          "d": 2,
+          "l": 6,
+          "gf": 7,
+          "ga": 17,
+          "gd": -10,
+          "pts": 8
+        },
+        {
+          "pos": 18,
+          "team": "Le Havre AC",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 9,
+          "ga": 22,
+          "gd": -13,
+          "pts": 2
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Lassine Sinayoko",
+          "team": "Paris FC",
+          "goals": 9
+        },
+        {
+          "player": "Amine Gouiri",
+          "team": "Olympique de Marseille",
+          "goals": 7
+        },
+        {
+          "player": "Esteban Lepaul",
+          "team": "Stade Rennais",
+          "goals": 7
+        },
+        {
+          "player": "Elye Wahi",
+          "team": "OGC Nice",
+          "goals": 6
+        },
+        {
+          "player": "Cameron Archer",
+          "team": "AJ Auxerre",
+          "goals": 6
+        },
+        {
+          "player": "Ludovic Ajorque",
+          "team": "Brest",
+          "goals": 5
+        },
+        {
+          "player": "Florian Thauvin",
+          "team": "RC Lens",
+          "goals": 5
+        },
+        {
+          "player": "Casper Tengstedt",
+          "team": "Toulouse FC",
+          "goals": 5
+        },
+        {
+          "player": "Boulaye Dia",
+          "team": "Stade Rennais",
+          "goals": 5
+        },
+        {
+          "player": "Gessime Yassine",
+          "team": "RC Strasbourg Alsace",
+          "goals": 4
+        }
+      ],
+      "meta": "Ligue 1 2026-27 table: Paris Saint-Germain lead with 23 points, Lille OSC 21, Paris FC 20 — Lassine Sinayoko is the top scorer with 9 goals; Matchweek 11 — 20–22 November 2026 and results."
+    },
+    {
+      "id": "botola",
+      "season": "2026-27",
+      "name": "Botola Pro",
+      "short": "Botola Pro",
+      "country": "Morocco",
+      "table": [
+        {
+          "pos": 1,
+          "team": "Kawkab Marrakech",
+          "p": 7,
+          "w": 5,
+          "d": 1,
+          "l": 1,
+          "gf": 10,
+          "ga": 6,
+          "gd": 4,
+          "pts": 16
+        },
+        {
+          "pos": 2,
+          "team": "CODM Meknès",
+          "p": 7,
+          "w": 4,
+          "d": 2,
+          "l": 1,
+          "gf": 10,
+          "ga": 4,
+          "gd": 6,
+          "pts": 14
+        },
+        {
+          "pos": 3,
+          "team": "Wydad AC",
+          "p": 7,
+          "w": 4,
+          "d": 2,
+          "l": 1,
+          "gf": 9,
+          "ga": 3,
+          "gd": 6,
+          "pts": 14
+        },
+        {
+          "pos": 4,
+          "team": "Raja CA",
+          "p": 7,
+          "w": 3,
+          "d": 3,
+          "l": 1,
+          "gf": 7,
+          "ga": 5,
+          "gd": 2,
+          "pts": 12
+        },
+        {
+          "pos": 5,
+          "team": "AS FAR",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 9,
+          "ga": 5,
+          "gd": 4,
+          "pts": 11
+        },
+        {
+          "pos": 6,
+          "team": "Maghreb AS",
+          "p": 7,
+          "w": 3,
+          "d": 2,
+          "l": 2,
+          "gf": 6,
+          "ga": 5,
+          "gd": 1,
+          "pts": 11
+        },
+        {
+          "pos": 7,
+          "team": "IR Tanger",
+          "p": 7,
+          "w": 3,
+          "d": 1,
+          "l": 3,
+          "gf": 8,
+          "ga": 9,
+          "gd": -1,
+          "pts": 10
+        },
+        {
+          "pos": 8,
+          "team": "Hassania Agadir",
+          "p": 7,
+          "w": 2,
+          "d": 3,
+          "l": 2,
+          "gf": 14,
+          "ga": 12,
+          "gd": 2,
+          "pts": 9
+        },
+        {
+          "pos": 9,
+          "team": "Union Touarga",
+          "p": 7,
+          "w": 2,
+          "d": 2,
+          "l": 3,
+          "gf": 4,
+          "ga": 6,
+          "gd": -2,
+          "pts": 8
+        },
+        {
+          "pos": 10,
+          "team": "DH Jadida",
+          "p": 7,
+          "w": 2,
+          "d": 2,
+          "l": 3,
+          "gf": 14,
+          "ga": 16,
+          "gd": -2,
+          "pts": 8
+        },
+        {
+          "pos": 11,
+          "team": "FUS Rabat",
+          "p": 7,
+          "w": 2,
+          "d": 2,
+          "l": 3,
+          "gf": 4,
+          "ga": 5,
+          "gd": -1,
+          "pts": 8
+        },
+        {
+          "pos": 12,
+          "team": "RS Berkane",
+          "p": 6,
+          "w": 1,
+          "d": 5,
+          "l": 0,
+          "gf": 6,
+          "ga": 4,
+          "gd": 2,
+          "pts": 8
+        },
+        {
+          "pos": 13,
+          "team": "US Amal Tiznit",
+          "p": 7,
+          "w": 2,
+          "d": 1,
+          "l": 4,
+          "gf": 8,
+          "ga": 12,
+          "gd": -4,
+          "pts": 7
+        },
+        {
+          "pos": 14,
+          "team": "WS Témara",
+          "p": 7,
+          "w": 2,
+          "d": 1,
+          "l": 4,
+          "gf": 5,
+          "ga": 7,
+          "gd": -2,
+          "pts": 6,
+          "deduction": 1
+        },
+        {
+          "pos": 15,
+          "team": "MA Tétouan",
+          "p": 7,
+          "w": 0,
+          "d": 3,
+          "l": 4,
+          "gf": 2,
+          "ga": 10,
+          "gd": -8,
+          "pts": 3
+        },
+        {
+          "pos": 16,
+          "team": "RCA Zemamra",
+          "p": 7,
+          "w": 0,
+          "d": 2,
+          "l": 5,
+          "gf": 6,
+          "ga": 13,
+          "gd": -7,
+          "pts": 2
+        }
+      ],
+      "scorers": [
+        {
+          "player": "Imad Riahi",
+          "team": "Hassania Agadir",
+          "goals": 6
+        },
+        {
+          "player": "Abderrazak Ennakouss",
+          "team": "DH Jadida",
+          "goals": 6
+        },
+        {
+          "player": "Youssef El Fahli",
+          "team": "AS FAR",
+          "goals": 5
+        },
+        {
+          "player": "Zakaria Essalhi",
+          "team": "US Amal Tiznit",
+          "goals": 5
+        },
+        {
+          "player": "Silvère Ganvoula",
+          "team": "Wydad AC",
+          "goals": 4
+        },
+        {
+          "player": "Saleh Essallami",
+          "team": "Kawkab Marrakech",
+          "goals": 4
+        },
+        {
+          "player": "Hamza El Wasti",
+          "team": "CODM Meknès",
+          "goals": 3
+        },
+        {
+          "player": "Othman Sabri",
+          "team": "WS Témara",
+          "goals": 3
+        },
+        {
+          "player": "Tshegofatso Mabasa",
+          "team": "Maghreb AS",
+          "goals": 2
+        },
+        {
+          "player": "Ayoub Maamouri",
+          "team": "Kawkab Marrakech",
+          "goals": 2
+        }
+      ],
+      "round": "Round 7",
+      "next_round": "Round 8 — resumes Friday 27 November 2026 (LNFP decision); matches of clubs in African competitions postponed further",
+      "source": "Wikipedia 2026–27 Botola Pro — source: FRMF.ma (matches up to 9 November 2026), cross-checked with pitchlabstats.com and globalsportsarchive.com — Top scorers: pitchlabstats.com + Wikipedia (FRMF) — Note: Wydad vs WS Témara was awarded 3–0 to Wydad by LNFP decision on 7 November 2026 (ineligible player), with one point deducted from WS Témara",
+      "meta": "Botola Pro 2026-27 table: Kawkab Marrakech lead with 16 points, CODM Meknès 14, Wydad AC 14 — Imad Riahi is the top scorer with 6 goals; Round 8 — resumes Friday 27 November 2026 (LNFP decision); matches of clubs in African competitions postponed further and results."
+    }
+  ],
+  "note": "Full tables verified for every league (last checked Thursday 19 November 2026). Source: ESPN + FRMF.ma for Botola Pro."
+}

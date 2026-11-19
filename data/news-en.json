@@ -1,0 +1,77 @@
+{
+  "articles": [
+    {
+      "category": "La Liga",
+      "date": "2026-09-15",
+      "emoji": "🇧🇷",
+      "excerpt": "12 goals in 7 La Liga matches… Barcelona's captain leads the European Golden Boot race and powers his team to a perfect start.",
+      "league": "la-liga",
+      "slug": "raphinha-top-scorer-europe",
+      "title": "Raphinha: Barcelona's Machine Leading Europe's Scoring Charts Unchallenged"
+    },
+    {
+      "category": "La Liga",
+      "date": "2026-09-19",
+      "emoji": "🔥",
+      "excerpt": "Atlético head into the derby in high spirits after two wins by a combined 7-0, while Real Madrid must win to close the gap on leaders Barcelona.",
+      "league": "la-liga",
+      "slug": "madrid-derby-preview",
+      "title": "Madrid Derby: Atlético Host Real in a Fiery Matchday 7 Clash"
+    },
+    {
+      "category": "Morocco National Team",
+      "date": "2026-09-18",
+      "emoji": "🦁",
+      "excerpt": "The Atlas Lions begin their qualifying campaign against Gabon on 25 September… key injuries and new faces expected in coach Mohamed Ouahbi's squad.",
+      "league": "botola",
+      "slug": "ouahbi-afcon-squad",
+      "title": "Ouahbi Set to Name Morocco Squad for 2027 AFCON Qualifiers Amid Sweeping Changes"
+    },
+    {
+      "category": "Morocco National Team",
+      "date": "2026-09-17",
+      "emoji": "🎙️",
+      "excerpt": "The national coach responds to Sofyan Amrabat's decision not to play under him: \"The past earns respect, but it earns no privileges.\"",
+      "league": "botola",
+      "slug": "amrabat-ouahbi",
+      "title": "Amrabat: No Dispute with Ouahbi… But No One's Place in the National Team Is Guaranteed"
+    },
+    {
+      "category": "Morocco National Team",
+      "date": "2026-09-14",
+      "emoji": "🇲🇦",
+      "excerpt": "From the historic win over Canada to the fall against France… a look at the Atlas Lions' 2026 World Cup record and the project for the future.",
+      "league": "botola",
+      "slug": "morocco-after-world-cup",
+      "title": "After the World Cup Quarter-Finals… Morocco Are Building the 2030 Generation, Step by Step"
+    },
+    {
+      "category": "Moroccan Botola",
+      "date": "2026-09-16",
+      "emoji": "🏆",
+      "excerpt": "After 8 rounds: Wydad lead on 20 points unbeaten, FAR Rabat second on 18 points, and Raja fourth with a game in hand.",
+      "league": "botola",
+      "slug": "botola-round8",
+      "title": "Wydad Hold On to Top Spot as FAR Rabat Chase Them in the Moroccan Botola Summit"
+    },
+    {
+      "category": "Premier League",
+      "date": "2026-09-13",
+      "emoji": "🏴",
+      "excerpt": "After 5 rounds: Manchester City and Arsenal lead on 12 points, Brighton the surprise package in third, and Haaland top of the scoring charts.",
+      "league": "premier-league",
+      "slug": "premier-league-race",
+      "title": "City and Arsenal Share Top Spot as Haaland Keeps Chasing the Goals"
+    },
+    {
+      "category": "Ligue 1",
+      "date": "2026-09-12",
+      "emoji": "🇫🇷",
+      "excerpt": "Monaco lead on 13 points, with Lyon and Paris FC chasing them, while reigning champions Paris Saint-Germain sit in 10th.",
+      "league": "ligue-1",
+      "slug": "ligue1-monaco-psg",
+      "title": "Monaco Top Ligue 1 as Champions PSG Stumble in a Disappointing Start"
+    }
+  ],
+  "updated": "2026-09-20"
+}

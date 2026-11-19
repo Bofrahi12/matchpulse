@@ -1,0 +1,797 @@
+{
+  "updated": "2026-11-18",
+  "leagues": {
+    "premier-league": "assets/img/logos/premier-league.png",
+    "la-liga": "assets/img/logos/la-liga.png",
+    "serie-a": "assets/img/logos/serie-a.png",
+    "bundesliga": "assets/img/logos/bundesliga.png",
+    "ligue-1": "assets/img/logos/ligue-1.png",
+    "botola": "assets/img/logos/botola.png"
+  },
+  "clubs": [
+    {
+      "ar": "آرسنال",
+      "en": "Arsenal",
+      "slug": "arsenal",
+      "league": "premier-league",
+      "file": "assets/img/logos/arsenal.svg"
+    },
+    {
+      "ar": "برايتون",
+      "en": "Brighton & Hove Albion",
+      "slug": "brighton",
+      "league": "premier-league",
+      "file": "assets/img/logos/brighton.svg"
+    },
+    {
+      "ar": "مانشستر سيتي",
+      "en": "Manchester City",
+      "slug": "manchester-city",
+      "league": "premier-league",
+      "file": "assets/img/logos/manchester-city.svg"
+    },
+    {
+      "ar": "ليفربول",
+      "en": "Liverpool",
+      "slug": "liverpool",
+      "league": "premier-league",
+      "file": "assets/img/logos/liverpool.svg"
+    },
+    {
+      "ar": "تشيلسي",
+      "en": "Chelsea",
+      "slug": "chelsea",
+      "league": "premier-league",
+      "file": "assets/img/logos/chelsea.svg"
+    },
+    {
+      "ar": "إيفرتون",
+      "en": "Everton",
+      "slug": "everton",
+      "league": "premier-league",
+      "file": "assets/img/logos/everton.svg"
+    },
+    {
+      "ar": "بورنموث",
+      "en": "Bournemouth",
+      "slug": "bournemouth",
+      "league": "premier-league",
+      "file": "assets/img/logos/bournemouth.svg"
+    },
+    {
+      "ar": "برينتفورد",
+      "en": "Brentford",
+      "slug": "brentford",
+      "league": "premier-league",
+      "file": "assets/img/logos/brentford.svg"
+    },
+    {
+      "ar": "ليدز يونايتد",
+      "en": "Leeds United",
+      "slug": "leeds-united",
+      "league": "premier-league",
+      "file": "assets/img/logos/leeds-united.svg"
+    },
+    {
+      "ar": "أستون فيلا",
+      "en": "Aston Villa",
+      "slug": "aston-villa",
+      "league": "premier-league",
+      "file": "assets/img/logos/aston-villa.svg"
+    },
+    {
+      "ar": "توتنهام",
+      "en": "Tottenham Hotspur",
+      "slug": "tottenham-hotspur",
+      "league": "premier-league",
+      "file": "assets/img/logos/tottenham-hotspur.svg"
+    },
+    {
+      "ar": "نيوكاسل يونايتد",
+      "en": "Newcastle United",
+      "slug": "newcastle-united",
+      "league": "premier-league",
+      "file": "assets/img/logos/newcastle-united.svg"
+    },
+    {
+      "ar": "هال سيتي",
+      "en": "Hull City",
+      "slug": "hull-city",
+      "league": "premier-league",
+      "file": "assets/img/logos/hull-city.svg"
+    },
+    {
+      "ar": "إيبسويتش تاون",
+      "en": "Ipswich Town",
+      "slug": "ipswich-town",
+      "league": "premier-league",
+      "file": "assets/img/logos/ipswich-town.svg"
+    },
+    {
+      "ar": "فولهام",
+      "en": "Fulham",
+      "slug": "fulham",
+      "league": "premier-league",
+      "file": "assets/img/logos/fulham.svg"
+    },
+    {
+      "ar": "نوتينغهام فورست",
+      "en": "Nottingham Forest",
+      "slug": "nottingham-forest",
+      "league": "premier-league",
+      "file": "assets/img/logos/nottingham-forest.svg"
+    },
+    {
+      "ar": "كوفنتري سيتي",
+      "en": "Coventry City",
+      "slug": "coventry-city",
+      "league": "premier-league",
+      "file": "assets/img/logos/coventry-city.svg"
+    },
+    {
+      "ar": "مانشستر يونايتد",
+      "en": "Manchester United",
+      "slug": "manchester-united",
+      "league": "premier-league",
+      "file": "assets/img/logos/manchester-united.svg"
+    },
+    {
+      "ar": "سندرلاند",
+      "en": "Sunderland",
+      "slug": "sunderland",
+      "league": "premier-league",
+      "file": "assets/img/logos/sunderland.svg"
+    },
+    {
+      "ar": "كريستال بالاس",
+      "en": "Crystal Palace",
+      "slug": "crystal-palace",
+      "league": "premier-league",
+      "file": "assets/img/logos/crystal-palace.svg"
+    },
+    {
+      "ar": "برشلونة",
+      "en": "FC Barcelona",
+      "slug": "barcelona",
+      "league": "la-liga",
+      "file": "assets/img/logos/barcelona.svg"
+    },
+    {
+      "ar": "ريال مدريد",
+      "en": "Real Madrid",
+      "slug": "real-madrid",
+      "league": "la-liga",
+      "file": "assets/img/logos/real-madrid.svg"
+    },
+    {
+      "ar": "أتلتيكو مدريد",
+      "en": "Atlético Madrid",
+      "slug": "atletico-madrid",
+      "league": "la-liga",
+      "file": "assets/img/logos/atletico-madrid.svg"
+    },
+    {
+      "ar": "ريال بيتيس",
+      "en": "Real Betis",
+      "slug": "real-betis",
+      "league": "la-liga",
+      "file": "assets/img/logos/real-betis.svg"
+    },
+    {
+      "ar": "ريال سوسيداد",
+      "en": "Real Sociedad",
+      "slug": "real-sociedad",
+      "league": "la-liga",
+      "file": "assets/img/logos/real-sociedad.svg"
+    },
+    {
+      "ar": "إشبيلية",
+      "en": "Sevilla FC",
+      "slug": "sevilla",
+      "league": "la-liga",
+      "file": "assets/img/logos/sevilla.svg"
+    },
+    {
+      "ar": "أتلتيك بلباو",
+      "en": "Athletic Bilbao",
+      "slug": "athletic-bilbao",
+      "league": "la-liga",
+      "file": "assets/img/logos/athletic-bilbao.svg"
+    },
+    {
+      "ar": "فياريال",
+      "en": "Villarreal CF",
+      "slug": "villarreal",
+      "league": "la-liga",
+      "file": "assets/img/logos/villarreal.svg"
+    },
+    {
+      "ar": "ديبورتيفو لاكورونيا",
+      "en": "Deportivo La Coruña",
+      "slug": "deportivo-la-coruna",
+      "league": "la-liga",
+      "file": "assets/img/logos/deportivo-la-coruna.png"
+    },
+    {
+      "ar": "راسينغ سانتاندير",
+      "en": "Racing Santander",
+      "slug": "racing-santander",
+      "league": "la-liga",
+      "file": "assets/img/logos/racing-santander.png"
+    },
+    {
+      "ar": "سيلتا فيغو",
+      "en": "Celta Vigo",
+      "slug": "celta-vigo",
+      "league": "la-liga",
+      "file": "assets/img/logos/celta-vigo.svg"
+    },
+    {
+      "ar": "ديبورتيفو ألافيس",
+      "en": "Deportivo Alavés",
+      "slug": "alaves",
+      "league": "la-liga",
+      "file": "assets/img/logos/alaves.svg"
+    },
+    {
+      "ar": "إسبانيول",
+      "en": "RCD Espanyol",
+      "slug": "espanyol",
+      "league": "la-liga",
+      "file": "assets/img/logos/espanyol.svg"
+    },
+    {
+      "ar": "رايو فايكانو",
+      "en": "Rayo Vallecano",
+      "slug": "rayo-vallecano",
+      "league": "la-liga",
+      "file": "assets/img/logos/rayo-vallecano.svg"
+    },
+    {
+      "ar": "خيتافي",
+      "en": "Getafe CF",
+      "slug": "getafe",
+      "league": "la-liga",
+      "file": "assets/img/logos/getafe.svg"
+    },
+    {
+      "ar": "أوساسونا",
+      "en": "CA Osasuna",
+      "slug": "osasuna",
+      "league": "la-liga",
+      "file": "assets/img/logos/osasuna.svg"
+    },
+    {
+      "ar": "ليفانتي",
+      "en": "Levante UD",
+      "slug": "levante",
+      "league": "la-liga",
+      "file": "assets/img/logos/levante.svg"
+    },
+    {
+      "ar": "إلتشي",
+      "en": "Elche CF",
+      "slug": "elche-cf",
+      "league": "la-liga",
+      "file": "assets/img/logos/elche-cf.svg"
+    },
+    {
+      "ar": "فالنسيا",
+      "en": "Valencia CF",
+      "slug": "valencia",
+      "league": "la-liga",
+      "file": "assets/img/logos/valencia.svg"
+    },
+    {
+      "ar": "ملقا",
+      "en": "Málaga CF",
+      "slug": "malaga",
+      "league": "la-liga",
+      "file": "assets/img/logos/malaga.svg"
+    },
+    {
+      "ar": "لاتسيو",
+      "en": "SS Lazio",
+      "slug": "lazio",
+      "league": "serie-a",
+      "file": "assets/img/logos/lazio.svg"
+    },
+    {
+      "ar": "إنتر ميلان",
+      "en": "Inter Milan",
+      "slug": "inter-milan",
+      "league": "serie-a",
+      "file": "assets/img/logos/inter-milan.svg"
+    },
+    {
+      "ar": "روما",
+      "en": "AS Roma",
+      "slug": "roma",
+      "league": "serie-a",
+      "file": "assets/img/logos/roma.png"
+    },
+    {
+      "ar": "ميلان",
+      "en": "AC Milan",
+      "slug": "ac-milan",
+      "league": "serie-a",
+      "file": "assets/img/logos/ac-milan.svg"
+    },
+    {
+      "ar": "كومو",
+      "en": "Como 1907",
+      "slug": "como",
+      "league": "serie-a",
+      "file": "assets/img/logos/como.svg"
+    },
+    {
+      "ar": "فروزينوني",
+      "en": "Frosinone Calcio",
+      "slug": "frosinone",
+      "league": "serie-a",
+      "file": "assets/img/logos/frosinone.svg"
+    },
+    {
+      "ar": "يوفنتوس",
+      "en": "Juventus FC",
+      "slug": "juventus",
+      "league": "serie-a",
+      "file": "assets/img/logos/juventus.svg"
+    },
+    {
+      "ar": "بولونيا",
+      "en": "Bologna FC",
+      "slug": "bologna",
+      "league": "serie-a",
+      "file": "assets/img/logos/bologna.svg"
+    },
+    {
+      "ar": "كالياري",
+      "en": "Cagliari Calcio",
+      "slug": "cagliari",
+      "league": "serie-a",
+      "file": "assets/img/logos/cagliari.svg"
+    },
+    {
+      "ar": "نابولي",
+      "en": "SSC Napoli",
+      "slug": "napoli",
+      "league": "serie-a",
+      "file": "assets/img/logos/napoli.png"
+    },
+    {
+      "ar": "تورينو",
+      "en": "Torino FC",
+      "slug": "torino",
+      "league": "serie-a",
+      "file": "assets/img/logos/torino.png"
+    },
+    {
+      "ar": "أتالانتا",
+      "en": "Atalanta BC",
+      "slug": "atalanta",
+      "league": "serie-a",
+      "file": "assets/img/logos/atalanta.svg"
+    },
+    {
+      "ar": "جنوى",
+      "en": "Genoa CFC",
+      "slug": "genoa",
+      "league": "serie-a",
+      "file": "assets/img/logos/genoa.svg"
+    },
+    {
+      "ar": "ليتشي",
+      "en": "US Lecce",
+      "slug": "lecce",
+      "league": "serie-a",
+      "file": "assets/img/logos/lecce.svg"
+    },
+    {
+      "ar": "فيورنتينا",
+      "en": "ACF Fiorentina",
+      "slug": "fiorentina",
+      "league": "serie-a",
+      "file": "assets/img/logos/fiorentina.svg"
+    },
+    {
+      "ar": "بارما",
+      "en": "Parma Calcio",
+      "slug": "parma",
+      "league": "serie-a",
+      "file": "assets/img/logos/parma.svg"
+    },
+    {
+      "ar": "ساسولو",
+      "en": "US Sassuolo Calcio",
+      "slug": "sassuolo",
+      "league": "serie-a",
+      "file": "assets/img/logos/sassuolo.svg"
+    },
+    {
+      "ar": "مونزا",
+      "en": "AC Monza",
+      "slug": "monza",
+      "league": "serie-a",
+      "file": "assets/img/logos/monza.png"
+    },
+    {
+      "ar": "فينيزيا",
+      "en": "Venezia FC",
+      "slug": "venezia",
+      "league": "serie-a",
+      "file": "assets/img/logos/venezia.svg"
+    },
+    {
+      "ar": "أودينيزي",
+      "en": "Udinese Calcio",
+      "slug": "udinese",
+      "league": "serie-a",
+      "file": "assets/img/logos/udinese.svg"
+    },
+    {
+      "ar": "بايرن ميونيخ",
+      "en": "FC Bayern Munich",
+      "slug": "bayern-munich",
+      "league": "bundesliga",
+      "file": "assets/img/logos/bayern-munich.svg"
+    },
+    {
+      "ar": "بوروسيا دورتموند",
+      "en": "Borussia Dortmund",
+      "slug": "borussia-dortmund",
+      "league": "bundesliga",
+      "file": "assets/img/logos/borussia-dortmund.svg"
+    },
+    {
+      "ar": "فرايبورغ",
+      "en": "SC Freiburg",
+      "slug": "freiburg",
+      "league": "bundesliga",
+      "file": "assets/img/logos/freiburg.svg"
+    },
+    {
+      "ar": "لايبزيغ",
+      "en": "RB Leipzig",
+      "slug": "rb-leipzig",
+      "league": "bundesliga",
+      "file": "assets/img/logos/rb-leipzig.svg"
+    },
+    {
+      "ar": "باير ليفركوزن",
+      "en": "Bayer 04 Leverkusen",
+      "slug": "bayer-leverkusen",
+      "league": "bundesliga",
+      "file": "assets/img/logos/bayer-leverkusen.svg"
+    },
+    {
+      "ar": "فيردر بريمن",
+      "en": "SV Werder Bremen",
+      "slug": "werder-bremen",
+      "league": "bundesliga",
+      "file": "assets/img/logos/werder-bremen.svg"
+    },
+    {
+      "ar": "إلفرسبرغ",
+      "en": "SV Elversberg",
+      "slug": "elversberg",
+      "league": "bundesliga",
+      "file": "assets/img/logos/elversberg.svg"
+    },
+    {
+      "ar": "شتوتغارت",
+      "en": "VfB Stuttgart",
+      "slug": "stuttgart",
+      "league": "bundesliga",
+      "file": "assets/img/logos/stuttgart.svg"
+    },
+    {
+      "ar": "هوفنهايم",
+      "en": "TSG Hoffenheim",
+      "slug": "hoffenheim",
+      "league": "bundesliga",
+      "file": "assets/img/logos/hoffenheim.svg"
+    },
+    {
+      "ar": "آينتراخت فرانكفورت",
+      "en": "Eintracht Frankfurt",
+      "slug": "eintracht-frankfurt",
+      "league": "bundesliga",
+      "file": "assets/img/logos/eintracht-frankfurt.svg"
+    },
+    {
+      "ar": "هامبورغ",
+      "en": "Hamburger SV",
+      "slug": "hamburg",
+      "league": "bundesliga",
+      "file": "assets/img/logos/hamburg.svg"
+    },
+    {
+      "ar": "ماينز",
+      "en": "1. FSV Mainz 05",
+      "slug": "mainz",
+      "league": "bundesliga",
+      "file": "assets/img/logos/mainz.svg"
+    },
+    {
+      "ar": "بادربورن",
+      "en": "SC Paderborn 07",
+      "slug": "paderborn",
+      "league": "bundesliga",
+      "file": "assets/img/logos/paderborn.svg"
+    },
+    {
+      "ar": "أوغسبورغ",
+      "en": "FC Augsburg",
+      "slug": "augsburg",
+      "league": "bundesliga",
+      "file": "assets/img/logos/augsburg.svg"
+    },
+    {
+      "ar": "كولن",
+      "en": "1. FC Köln",
+      "slug": "koln",
+      "league": "bundesliga",
+      "file": "assets/img/logos/koln.svg"
+    },
+    {
+      "ar": "يونيون برلين",
+      "en": "1. FC Union Berlin",
+      "slug": "union-berlin",
+      "league": "bundesliga",
+      "file": "assets/img/logos/union-berlin.svg"
+    },
+    {
+      "ar": "شالكه",
+      "en": "FC Schalke 04",
+      "slug": "schalke-04",
+      "league": "bundesliga",
+      "file": "assets/img/logos/schalke-04.svg"
+    },
+    {
+      "ar": "بوروسيا مونشنغلادباخ",
+      "en": "Borussia Mönchengladbach",
+      "slug": "borussia-monchengladbach",
+      "league": "bundesliga",
+      "file": "assets/img/logos/borussia-monchengladbach.svg"
+    },
+    {
+      "ar": "باريس سان جيرمان",
+      "en": "Paris Saint-Germain",
+      "slug": "psg",
+      "league": "ligue-1",
+      "file": "assets/img/logos/psg.svg"
+    },
+    {
+      "ar": "ليل",
+      "en": "Lille OSC",
+      "slug": "lille",
+      "league": "ligue-1",
+      "file": "assets/img/logos/lille.svg"
+    },
+    {
+      "ar": "باريس إف سي",
+      "en": "Paris FC",
+      "slug": "paris-fc",
+      "league": "ligue-1",
+      "file": "assets/img/logos/paris-fc.svg"
+    },
+    {
+      "ar": "مارسيليا",
+      "en": "Olympique de Marseille",
+      "slug": "marseille",
+      "league": "ligue-1",
+      "file": "assets/img/logos/marseille.svg"
+    },
+    {
+      "ar": "ليون",
+      "en": "Olympique Lyonnais",
+      "slug": "lyon",
+      "league": "ligue-1",
+      "file": "assets/img/logos/lyon.svg"
+    },
+    {
+      "ar": "نيس",
+      "en": "OGC Nice",
+      "slug": "nice",
+      "league": "ligue-1",
+      "file": "assets/img/logos/nice.png"
+    },
+    {
+      "ar": "موناكو",
+      "en": "AS Monaco",
+      "slug": "monaco",
+      "league": "ligue-1",
+      "file": "assets/img/logos/monaco.png"
+    },
+    {
+      "ar": "رين",
+      "en": "Stade Rennais",
+      "slug": "rennes",
+      "league": "ligue-1",
+      "file": "assets/img/logos/rennes.svg"
+    },
+    {
+      "ar": "بريست",
+      "en": "Stade Brestois 29",
+      "slug": "brest",
+      "league": "ligue-1",
+      "file": "assets/img/logos/brest.svg"
+    },
+    {
+      "ar": "لوريان",
+      "en": "FC Lorient",
+      "slug": "lorient",
+      "league": "ligue-1",
+      "file": "assets/img/logos/lorient.svg"
+    },
+    {
+      "ar": "لانس",
+      "en": "RC Lens",
+      "slug": "lens",
+      "league": "ligue-1",
+      "file": "assets/img/logos/lens.svg"
+    },
+    {
+      "ar": "تولوز",
+      "en": "Toulouse FC",
+      "slug": "toulouse",
+      "league": "ligue-1",
+      "file": "assets/img/logos/toulouse.svg"
+    },
+    {
+      "ar": "ستراسبورغ",
+      "en": "RC Strasbourg Alsace",
+      "slug": "strasbourg",
+      "league": "ligue-1",
+      "file": "assets/img/logos/strasbourg.svg"
+    },
+    {
+      "ar": "أوكسير",
+      "en": "AJ Auxerre",
+      "slug": "auxerre",
+      "league": "ligue-1",
+      "file": "assets/img/logos/auxerre.svg"
+    },
+    {
+      "ar": "لومان",
+      "en": "Le Mans FC",
+      "slug": "le-mans",
+      "league": "ligue-1",
+      "file": "assets/img/logos/le-mans.png"
+    },
+    {
+      "ar": "أنجيه",
+      "en": "Angers SCO",
+      "slug": "angers",
+      "league": "ligue-1",
+      "file": "assets/img/logos/angers.svg"
+    },
+    {
+      "ar": "تروا",
+      "en": "ESTAC Troyes",
+      "slug": "troyes",
+      "league": "ligue-1",
+      "file": "assets/img/logos/troyes.svg"
+    },
+    {
+      "ar": "لوهافر",
+      "en": "Le Havre AC",
+      "slug": "le-havre",
+      "league": "ligue-1",
+      "file": "assets/img/logos/le-havre.svg"
+    },
+    {
+      "ar": "الكوكب المراكشي",
+      "en": "Kawkab Marrakech",
+      "slug": "kawkab-marrakech",
+      "league": "botola",
+      "file": "assets/img/logos/kawkab-marrakech.png"
+    },
+    {
+      "ar": "النادي المكناسي",
+      "en": "CODM Meknès",
+      "slug": "codm-meknes",
+      "league": "botola",
+      "file": "assets/img/logos/codm-meknes.png"
+    },
+    {
+      "ar": "الوداد الرياضي",
+      "en": "Wydad AC",
+      "slug": "wydad",
+      "league": "botola",
+      "file": "assets/img/logos/wydad.png"
+    },
+    {
+      "ar": "الرجاء الرياضي",
+      "en": "Raja CA",
+      "slug": "raja",
+      "league": "botola",
+      "file": "assets/img/logos/raja.png"
+    },
+    {
+      "ar": "الجيش الملكي",
+      "en": "AS FAR",
+      "slug": "as-far",
+      "league": "botola",
+      "file": "assets/img/logos/as-far.png"
+    },
+    {
+      "ar": "المغرب الفاسي",
+      "en": "Maghreb AS",
+      "slug": "maghreb-fes",
+      "league": "botola",
+      "file": "assets/img/logos/maghreb-fes.png"
+    },
+    {
+      "ar": "اتحاد طنجة",
+      "en": "IR Tanger",
+      "slug": "ir-tanger",
+      "league": "botola",
+      "file": "assets/img/logos/ir-tanger.png"
+    },
+    {
+      "ar": "حسنية أكادير",
+      "en": "Hassania Agadir",
+      "slug": "hus-agadir",
+      "league": "botola",
+      "file": "assets/img/logos/hus-agadir.png"
+    },
+    {
+      "ar": "اتحاد تواركة",
+      "en": "Union Touarga",
+      "slug": "us-touarga",
+      "league": "botola",
+      "file": "assets/img/logos/us-touarga.png"
+    },
+    {
+      "ar": "الدفاع الحسني الجديدي",
+      "en": "DH Jadida",
+      "slug": "dh-jadida",
+      "league": "botola",
+      "file": "assets/img/logos/dh-jadida.png"
+    },
+    {
+      "ar": "الفتح الرباطي",
+      "en": "FUS Rabat",
+      "slug": "fus-rabat",
+      "league": "botola",
+      "file": "assets/img/logos/fus-rabat.png"
+    },
+    {
+      "ar": "نهضة بركان",
+      "en": "RS Berkane",
+      "slug": "rs-berkane",
+      "league": "botola",
+      "file": "assets/img/logos/rs-berkane.png"
+    },
+    {
+      "ar": "أمل تيزنيت",
+      "en": "US Amal Tiznit",
+      "slug": "us-amal-tiznit",
+      "league": "botola",
+      "file": "assets/img/logos/us-amal-tiznit.png"
+    },
+    {
+      "ar": "وداد تمارة",
+      "en": "WS Témara",
+      "slug": "ws-temara",
+      "league": "botola",
+      "file": "assets/img/logos/ws-temara.png"
+    },
+    {
+      "ar": "المغرب التطواني",
+      "en": "MA Tétouan",
+      "slug": "ma-tetouan",
+      "league": "botola",
+      "file": "assets/img/logos/ma-tetouan.png"
+    },
+    {
+      "ar": "نهضة الزمامرة",
+      "en": "RCA Zemamra",
+      "slug": "rca-zemamra",
+      "league": "botola",
+      "file": "assets/img/logos/rca-zemamra.png"
+    }
+  ]
+}

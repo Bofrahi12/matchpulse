@@ -1,0 +1,2791 @@
+{
+  "updated": "2026-11-19",
+  "today_date": "2026-11-19",
+  "tomorrow_date": "2026-11-20",
+  "note": "Thursday 19 November 2026: no matches today in the six leagues. Back Friday 20 November 2026 (3 matches). All times UTC.",
+  "live": [],
+  "today": [],
+  "tomorrow": [
+    {
+      "id": "bayern-munich-koln-2026-11-20",
+      "home": "FC Bayern Munich",
+      "away": "1. FC Köln",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "Allianz Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:30"
+    },
+    {
+      "id": "troyes-le-havre-2026-11-20",
+      "home": "ESTAC Troyes",
+      "away": "Le Havre AC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "Stade de l'Aube",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "athletic-bilbao-espanyol-2026-11-20",
+      "home": "Athletic Bilbao",
+      "away": "RCD Espanyol",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "San Mamés",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "bayern-munich-koln-2026-11-20",
+      "home": "FC Bayern Munich",
+      "away": "1. FC Köln",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "Allianz Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:30"
+    },
+    {
+      "id": "troyes-le-havre-2026-11-20",
+      "home": "ESTAC Troyes",
+      "away": "Le Havre AC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "Stade de l'Aube",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "athletic-bilbao-espanyol-2026-11-20",
+      "home": "Athletic Bilbao",
+      "away": "RCD Espanyol",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-20",
+      "source": "ESPN (site.api.espn.com) — 20 November 2026",
+      "venue": "San Mamés",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    },
+    {
+      "id": "manchester-city-fulham-2026-11-21",
+      "home": "Manchester City",
+      "away": "Fulham",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Etihad Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "12:30"
+    },
+    {
+      "id": "alaves-deportivo-la-coruna-2026-11-21",
+      "home": "Deportivo Alavés",
+      "away": "Deportivo La Coruña",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Mendizorrotza",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "13:00"
+    },
+    {
+      "id": "como-cagliari-2026-11-21",
+      "home": "Como 1907",
+      "away": "Cagliari Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Giuseppe Sinigaglia",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "lazio-lecce-2026-11-21",
+      "home": "SS Lazio",
+      "away": "US Lecce",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Olimpico",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "union-berlin-rb-leipzig-2026-11-21",
+      "home": "1. FC Union Berlin",
+      "away": "RB Leipzig",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stadion An der Alten Försterei",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "bayer-leverkusen-paderborn-2026-11-21",
+      "home": "Bayer 04 Leverkusen",
+      "away": "SC Paderborn 07",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "BayArena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "borussia-monchengladbach-borussia-dortmund-2026-11-21",
+      "home": "Borussia Mönchengladbach",
+      "away": "Borussia Dortmund",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "BORUSSIA-PARK",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "eintracht-frankfurt-hoffenheim-2026-11-21",
+      "home": "Eintracht Frankfurt",
+      "away": "TSG Hoffenheim",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Deutsche Bank Park",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "elversberg-freiburg-2026-11-21",
+      "home": "SV Elversberg",
+      "away": "SC Freiburg",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "URSAPHARM-Arena an der Kaiserlinde",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "bournemouth-nottingham-forest-2026-11-21",
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Vitality Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:00"
+    },
+    {
+      "id": "aston-villa-sunderland-2026-11-21",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Villa Park",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:00"
+    },
+    {
+      "id": "chelsea-leeds-united-2026-11-21",
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stamford Bridge",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:00"
+    },
+    {
+      "id": "coventry-city-crystal-palace-2026-11-21",
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Coventry Building Society Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:00"
+    },
+    {
+      "id": "tottenham-hotspur-ipswich-town-2026-11-21",
+      "home": "Tottenham Hotspur",
+      "away": "Ipswich Town",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Tottenham Hotspur Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:00"
+    },
+    {
+      "id": "rayo-vallecano-valencia-2026-11-21",
+      "home": "Rayo Vallecano",
+      "away": "Valencia CF",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Estadio de Vallecas",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:15"
+    },
+    {
+      "id": "nice-psg-2026-11-21",
+      "home": "OGC Nice",
+      "away": "Paris Saint-Germain",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Allianz Riviera",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "16:15"
+    },
+    {
+      "id": "parma-roma-2026-11-21",
+      "home": "Parma Calcio",
+      "away": "AS Roma",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Ennio Tardini",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:00"
+    },
+    {
+      "id": "newcastle-united-arsenal-2026-11-21",
+      "home": "Newcastle United",
+      "away": "Arsenal",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "St. James' Park",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:30"
+    },
+    {
+      "id": "sevilla-real-betis-2026-11-21",
+      "home": "Sevilla FC",
+      "away": "Real Betis",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Ramón Sánchez Pizjuán Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:30"
+    },
+    {
+      "id": "schalke-04-stuttgart-2026-11-21",
+      "home": "FC Schalke 04",
+      "away": "VfB Stuttgart",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Veltins Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:30"
+    },
+    {
+      "id": "napoli-torino-2026-11-21",
+      "home": "SSC Napoli",
+      "away": "Torino FC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stadio Diego Armando Maradona",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "monaco-auxerre-2026-11-21",
+      "home": "AS Monaco",
+      "away": "AJ Auxerre",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stade Louis II",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "lens-toulouse-2026-11-21",
+      "home": "RC Lens",
+      "away": "Toulouse FC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stade Bollaert-Delelis",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "lille-lyon-2026-11-21",
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Decathlon Arena - Stade Pierre-Mauroy",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "strasbourg-brest-2026-11-21",
+      "home": "RC Strasbourg Alsace",
+      "away": "Brest",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Stade de la Meinau",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "real-madrid-celta-vigo-2026-11-21",
+      "home": "Real Madrid",
+      "away": "Celta Vigo",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-21",
+      "source": "ESPN (site.api.espn.com) — 21 November 2026",
+      "venue": "Santiago Bernabéu",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    },
+    {
+      "id": "juventus-venezia-2026-11-22",
+      "home": "Juventus FC",
+      "away": "Venezia FC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Allianz Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "11:30"
+    },
+    {
+      "id": "barcelona-villarreal-2026-11-22",
+      "home": "FC Barcelona",
+      "away": "Villarreal CF",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Spotify Camp Nou",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "13:00"
+    },
+    {
+      "id": "hull-city-brighton-2026-11-22",
+      "home": "Hull City",
+      "away": "Brighton & Hove Albion",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "The MKM Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "bologna-udinese-2026-11-22",
+      "home": "Bologna FC",
+      "away": "Udinese Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Renato Dall'Ara",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "sassuolo-genoa-2026-11-22",
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Mapei Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "paris-fc-angers-2026-11-22",
+      "home": "Paris FC",
+      "away": "Angers SCO",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Stade Jean Bouin",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:00"
+    },
+    {
+      "id": "augsburg-mainz-2026-11-22",
+      "home": "FC Augsburg",
+      "away": "1. FSV Mainz 05",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "WWK Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "14:30"
+    },
+    {
+      "id": "racing-santander-real-sociedad-2026-11-22",
+      "home": "Racing Santander",
+      "away": "Real Sociedad",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "El Sardineros",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "15:15"
+    },
+    {
+      "id": "lorient-rennes-2026-11-22",
+      "home": "FC Lorient",
+      "away": "Stade Rennais",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Stade du Moustoir - Yves Allainmat",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "16:15"
+    },
+    {
+      "id": "liverpool-manchester-united-2026-11-22",
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Anfield",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "16:30"
+    },
+    {
+      "id": "werder-bremen-hamburg-2026-11-22",
+      "home": "SV Werder Bremen",
+      "away": "Hamburger SV",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Weserstadion",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "16:30"
+    },
+    {
+      "id": "ac-milan-frosinone-2026-11-22",
+      "home": "AC Milan",
+      "away": "Frosinone Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "San Siro",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:00"
+    },
+    {
+      "id": "osasuna-malaga-2026-11-22",
+      "home": "CA Osasuna",
+      "away": "Málaga CF",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "El Sadar",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "17:30"
+    },
+    {
+      "id": "atalanta-inter-milan-2026-11-22",
+      "home": "Atalanta BC",
+      "away": "Inter Milan",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "New Balance Arena",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "marseille-le-mans-2026-11-22",
+      "home": "Olympique de Marseille",
+      "away": "Le Mans FC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Stade Vélodrome",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "getafe-atletico-madrid-2026-11-22",
+      "home": "Getafe CF",
+      "away": "Atlético Madrid",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-22",
+      "source": "ESPN (site.api.espn.com) — 22 November 2026",
+      "venue": "Estadio Coliseum",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    },
+    {
+      "id": "monza-fiorentina-2026-11-23",
+      "home": "AC Monza",
+      "away": "ACF Fiorentina",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-23",
+      "source": "ESPN (site.api.espn.com) — 23 November 2026",
+      "venue": "U-Power Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "19:45"
+    },
+    {
+      "id": "brentford-everton-2026-11-23",
+      "home": "Brentford",
+      "away": "Everton",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-23",
+      "source": "ESPN (site.api.espn.com) — 23 November 2026",
+      "venue": "Gtech Community Stadium",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    },
+    {
+      "id": "levante-elche-cf-2026-11-23",
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-23",
+      "source": "ESPN (site.api.espn.com) — 23 November 2026",
+      "venue": "Estadi Ciutat de València",
+      "channel": "beIN Sports",
+      "status": "scheduled",
+      "time": "20:00"
+    },
+    {
+      "id": "codm-rcaz-2026-11-27",
+      "home": "CODM Meknès",
+      "away": "RCA Zemamra",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "scheduled",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "usat-mat-2026-11-27",
+      "home": "US Amal Tiznit",
+      "away": "MA Tétouan",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "scheduled",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "uts-kacm-2026-11-27",
+      "home": "Union Touarga",
+      "away": "Kawkab Marrakech",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "scheduled",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "irt-husa-2026-11-27",
+      "home": "IR Tanger",
+      "away": "Hassania Agadir",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "scheduled",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "wydad-far-2026-11-27",
+      "home": "Wydad AC",
+      "away": "AS FAR",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "postponed",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "berkane-fus-2026-11-27",
+      "home": "RS Berkane",
+      "away": "FUS Rabat",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "postponed",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "dhj-mas-2026-11-27",
+      "home": "DH Jadida",
+      "away": "Maghreb AS",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "postponed",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    },
+    {
+      "id": "temara-raja-2026-11-27",
+      "home": "WS Témara",
+      "away": "Raja CA",
+      "league": "botola",
+      "league_name": "Botola Pro",
+      "date": "2026-11-27",
+      "time": "TBC",
+      "status": "postponed",
+      "source": "LNFP via h24info.ma (9 November 2026) — resumes 27 November; exact kick-off times TBC",
+      "venue": "To be confirmed",
+      "channel": "Arryadia TNT"
+    }
+  ],
+  "results": [
+    {
+      "id": "brighton-brentford-2026-11-08",
+      "home": "Brighton & Hove Albion",
+      "away": "Brentford",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "American Express Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 75,
+        "shots_home": 20,
+        "shots_on_target_home": 6,
+        "corners_home": 7,
+        "possession_away": 24,
+        "shots_away": 5,
+        "shots_on_target_away": 0,
+        "corners_away": 3,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "15",
+          "team": "Brighton & Hove Albion",
+          "player": "Diego Gómez",
+          "type": "Goal"
+        },
+        {
+          "minute": "42",
+          "team": "Brighton & Hove Albion",
+          "player": "Pascal Gross",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "crystal-palace-liverpool-2026-11-08",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Selhurst Park",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 3,
+      "stats": {
+        "possession_home": 53,
+        "shots_home": 19,
+        "shots_on_target_home": 7,
+        "corners_home": 4,
+        "possession_away": 46,
+        "shots_away": 20,
+        "shots_on_target_away": 8,
+        "corners_away": 7,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "40",
+          "team": "Liverpool",
+          "player": "Alexis Mac Allister",
+          "type": "Goal"
+        },
+        {
+          "minute": "54",
+          "team": "Liverpool",
+          "player": "Florian Wirtz",
+          "type": "Goal"
+        },
+        {
+          "minute": "89",
+          "team": "Liverpool",
+          "player": "Alexander Isak",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+5",
+          "team": "Crystal Palace",
+          "player": "Eddie Nketiah",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "ipswich-town-bournemouth-2026-11-08",
+      "home": "Ipswich Town",
+      "away": "Bournemouth",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Portman Road",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 55,
+        "shots_home": 10,
+        "shots_on_target_home": 2,
+        "corners_home": 2,
+        "possession_away": 44,
+        "shots_away": 15,
+        "shots_on_target_away": 4,
+        "corners_away": 7,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "5",
+          "team": "Bournemouth",
+          "player": "Evanilson",
+          "type": "Goal"
+        },
+        {
+          "minute": "46",
+          "team": "Bournemouth",
+          "player": "Leif Davis",
+          "type": "Goal"
+        },
+        {
+          "minute": "73",
+          "team": "Ipswich Town",
+          "player": "Jack Clarke",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "sunderland-chelsea-2026-11-08",
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stadium of Light",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 31,
+        "shots_home": 9,
+        "shots_on_target_home": 2,
+        "corners_home": 2,
+        "possession_away": 68,
+        "shots_away": 10,
+        "shots_on_target_away": 4,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "36",
+          "team": "Sunderland",
+          "player": "Enzo Le Fée",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "manchester-united-aston-villa-2026-11-08",
+      "home": "Manchester United",
+      "away": "Aston Villa",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Old Trafford",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 4,
+      "away_goals": 4,
+      "stats": {
+        "possession_home": 55,
+        "shots_home": 26,
+        "shots_on_target_home": 9,
+        "corners_home": 8,
+        "possession_away": 44,
+        "shots_away": 12,
+        "shots_on_target_away": 6,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "1",
+          "team": "Aston Villa",
+          "player": "Alysson",
+          "type": "Goal"
+        },
+        {
+          "minute": "4",
+          "team": "Aston Villa",
+          "player": "Nicolas Jackson",
+          "type": "Goal"
+        },
+        {
+          "minute": "16",
+          "team": "Manchester United",
+          "player": "Bruno Fernandes",
+          "type": "Goal"
+        },
+        {
+          "minute": "44",
+          "team": "Manchester United",
+          "player": "Youri Tielemans",
+          "type": "Goal"
+        },
+        {
+          "minute": "48",
+          "team": "Aston Villa",
+          "player": "John McGinn",
+          "type": "Goal"
+        },
+        {
+          "minute": "53",
+          "team": "Aston Villa",
+          "player": "Leon Goretzka",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+2",
+          "team": "Manchester United",
+          "player": "Joshua Zirkzee",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+6",
+          "team": "Manchester United",
+          "player": "Patrick Dorgu",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "elche-cf-real-betis-2026-11-08",
+      "home": "Elche CF",
+      "away": "Real Betis",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Estadio Martínez Valero",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 47,
+        "shots_home": 13,
+        "shots_on_target_home": 1,
+        "corners_home": 9,
+        "possession_away": 52,
+        "shots_away": 18,
+        "shots_on_target_away": 9,
+        "corners_away": 8,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "81",
+          "team": "Real Betis",
+          "player": "Rodrigo Riquelme",
+          "type": "Goal"
+        },
+        {
+          "minute": "89",
+          "team": "Real Betis",
+          "player": "Marc Bartra",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "real-sociedad-rayo-vallecano-2026-11-08",
+      "home": "Real Sociedad",
+      "away": "Rayo Vallecano",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Reale Arena",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 50,
+        "shots_home": 17,
+        "shots_on_target_home": 3,
+        "corners_home": 7,
+        "possession_away": 49,
+        "shots_away": 11,
+        "shots_on_target_away": 3,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "67",
+          "team": "Real Sociedad",
+          "player": "Orri Óskarsson",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "celta-vigo-levante-2026-11-08",
+      "home": "Celta Vigo",
+      "away": "Levante UD",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Balaidos",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 58,
+        "shots_home": 23,
+        "shots_on_target_home": 8,
+        "corners_home": 6,
+        "possession_away": 41,
+        "shots_away": 6,
+        "shots_on_target_away": 0,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      }
+    },
+    {
+      "id": "villarreal-getafe-2026-11-08",
+      "home": "Villarreal CF",
+      "away": "Getafe CF",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Estadio de la Cerámica",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 72,
+        "shots_home": 22,
+        "shots_on_target_home": 7,
+        "corners_home": 9,
+        "possession_away": 27,
+        "shots_away": 9,
+        "shots_on_target_away": 1,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "80",
+          "team": "Villarreal CF",
+          "player": "Tajon Buchanan",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+1",
+          "team": "Villarreal CF",
+          "player": "Carlos Romero",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "atletico-madrid-barcelona-2026-11-08",
+      "home": "Atlético Madrid",
+      "away": "FC Barcelona",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Riyadh Air Metropolitano",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 37,
+        "shots_home": 9,
+        "shots_on_target_home": 4,
+        "corners_home": 4,
+        "possession_away": 63,
+        "shots_away": 19,
+        "shots_on_target_away": 4,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "10",
+          "team": "Atlético Madrid",
+          "player": "Giuliano Simeone",
+          "type": "Goal"
+        },
+        {
+          "minute": "45",
+          "team": "FC Barcelona",
+          "player": "Fermín López",
+          "type": "Goal"
+        },
+        {
+          "minute": "66",
+          "team": "FC Barcelona",
+          "player": "Fermín López",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "napoli-lazio-2026-11-08",
+      "home": "SSC Napoli",
+      "away": "SS Lazio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stadio Diego Armando Maradona",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 49,
+        "shots_home": 15,
+        "shots_on_target_home": 6,
+        "corners_home": 6,
+        "possession_away": 51,
+        "shots_away": 15,
+        "shots_on_target_away": 6,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "28",
+          "team": "SS Lazio",
+          "player": "Davide Frattesi",
+          "type": "Goal"
+        },
+        {
+          "minute": "48",
+          "team": "SSC Napoli",
+          "player": "Alfonso Pedraza",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "genoa-ac-milan-2026-11-08",
+      "home": "Genoa CFC",
+      "away": "AC Milan",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stadio Luigi Ferraris",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 37,
+        "shots_home": 17,
+        "shots_on_target_home": 5,
+        "corners_home": 3,
+        "possession_away": 62,
+        "shots_away": 6,
+        "shots_on_target_away": 2,
+        "corners_away": 0,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "13",
+          "team": "AC Milan",
+          "player": "Alphadjo Cissè",
+          "type": "Goal"
+        },
+        {
+          "minute": "19",
+          "team": "AC Milan",
+          "player": "Christian Pulisic",
+          "type": "Goal"
+        },
+        {
+          "minute": "88",
+          "team": "Genoa CFC",
+          "player": "Mikael Ellertsson",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "monza-atalanta-2026-11-08",
+      "home": "AC Monza",
+      "away": "Atalanta BC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "U-Power Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 48,
+        "shots_home": 22,
+        "shots_on_target_home": 7,
+        "corners_home": 7,
+        "possession_away": 51,
+        "shots_away": 13,
+        "shots_on_target_away": 7,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "49",
+          "team": "Atalanta BC",
+          "player": "Nikola Krstovic",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "inter-milan-como-2026-11-08",
+      "home": "Inter Milan",
+      "away": "Como 1907",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "San Siro",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 43,
+        "shots_home": 14,
+        "shots_on_target_home": 4,
+        "corners_home": 4,
+        "possession_away": 57,
+        "shots_away": 5,
+        "shots_on_target_away": 1,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "12",
+          "team": "Inter Milan",
+          "player": "Pio Esposito",
+          "type": "Goal"
+        },
+        {
+          "minute": "19",
+          "team": "Inter Milan",
+          "player": "Marcus Thuram",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "fiorentina-juventus-2026-11-08",
+      "home": "ACF Fiorentina",
+      "away": "Juventus FC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stadio Artemio Franchi",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 41,
+        "shots_home": 22,
+        "shots_on_target_home": 6,
+        "corners_home": 5,
+        "possession_away": 58,
+        "shots_away": 18,
+        "shots_on_target_away": 6,
+        "corners_away": 12,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "4",
+          "team": "ACF Fiorentina",
+          "player": "Mateo Pellegrino",
+          "type": "Goal"
+        },
+        {
+          "minute": "32",
+          "team": "Juventus FC",
+          "player": "Nick Woltemade",
+          "type": "Goal"
+        },
+        {
+          "minute": "54",
+          "team": "ACF Fiorentina",
+          "player": "Alieu Njie",
+          "type": "Goal"
+        },
+        {
+          "minute": "66",
+          "team": "Juventus FC",
+          "player": "Bremer",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "koln-bayer-leverkusen-2026-11-08",
+      "home": "1. FC Köln",
+      "away": "Bayer 04 Leverkusen",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "RheinEnergieStadion",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 38,
+        "shots_home": 12,
+        "shots_on_target_home": 6,
+        "corners_home": 2,
+        "possession_away": 61,
+        "shots_away": 14,
+        "shots_on_target_away": 8,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "7",
+          "team": "Bayer 04 Leverkusen",
+          "player": "Aleix García",
+          "type": "Goal"
+        },
+        {
+          "minute": "85",
+          "team": "Bayer 04 Leverkusen",
+          "player": "Patrik Schick",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+2",
+          "team": "1. FC Köln",
+          "player": "Said El Mala",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "freiburg-union-berlin-2026-11-08",
+      "home": "SC Freiburg",
+      "away": "1. FC Union Berlin",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Europa-Park Stadion",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 59,
+        "shots_home": 20,
+        "shots_on_target_home": 9,
+        "corners_home": 5,
+        "possession_away": 40,
+        "shots_away": 4,
+        "shots_on_target_away": 0,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "55",
+          "team": "SC Freiburg",
+          "player": "Rani Khedira",
+          "type": "Goal"
+        },
+        {
+          "minute": "67",
+          "team": "SC Freiburg",
+          "player": "Yuito Suzuki",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "hoffenheim-schalke-04-2026-11-08",
+      "home": "TSG Hoffenheim",
+      "away": "FC Schalke 04",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "PreZero Arena",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 48,
+        "shots_home": 15,
+        "shots_on_target_home": 7,
+        "corners_home": 6,
+        "possession_away": 51,
+        "shots_away": 23,
+        "shots_on_target_away": 6,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "10",
+          "team": "TSG Hoffenheim",
+          "player": "Fisnik Asllani",
+          "type": "Goal"
+        },
+        {
+          "minute": "26",
+          "team": "TSG Hoffenheim",
+          "player": "Tim Lemperle",
+          "type": "Goal"
+        },
+        {
+          "minute": "81",
+          "team": "FC Schalke 04",
+          "player": "Junior Adamu",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "rennes-lille-2026-11-08",
+      "home": "Stade Rennais",
+      "away": "Lille OSC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Roazhon Park",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 55,
+        "shots_home": 15,
+        "shots_on_target_home": 2,
+        "corners_home": 7,
+        "possession_away": 44,
+        "shots_away": 8,
+        "shots_on_target_away": 3,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "24",
+          "team": "Lille OSC",
+          "player": "Soriba Diaoune",
+          "type": "Goal"
+        },
+        {
+          "minute": "31",
+          "team": "Stade Rennais",
+          "player": "Boulaye Dia",
+          "type": "Goal"
+        },
+        {
+          "minute": "68",
+          "team": "Lille OSC",
+          "player": "Nathan Ngoy",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "angers-nice-2026-11-08",
+      "home": "Angers SCO",
+      "away": "OGC Nice",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stade Raymond Kopa",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 51,
+        "shots_home": 12,
+        "shots_on_target_home": 4,
+        "corners_home": 6,
+        "possession_away": 48,
+        "shots_away": 16,
+        "shots_on_target_away": 8,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "2",
+          "team": "OGC Nice",
+          "player": "Sofiane Diop",
+          "type": "Goal"
+        },
+        {
+          "minute": "78",
+          "team": "OGC Nice",
+          "player": "Jonathan Clauss",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "brest-lyon-2026-11-08",
+      "home": "Brest",
+      "away": "Olympique Lyonnais",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stade Francis-Le Blé",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 31,
+        "shots_home": 13,
+        "shots_on_target_home": 6,
+        "corners_home": 1,
+        "possession_away": 68,
+        "shots_away": 10,
+        "shots_on_target_away": 2,
+        "corners_away": 8,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "22",
+          "team": "Brest",
+          "player": "Noah Edjouma",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+4",
+          "team": "Brest",
+          "player": "Ludovic Ajorque",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "le-havre-lorient-2026-11-08",
+      "home": "Le Havre AC",
+      "away": "FC Lorient",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stade Océane",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 53,
+        "shots_home": 21,
+        "shots_on_target_home": 5,
+        "corners_home": 5,
+        "possession_away": 46,
+        "shots_away": 7,
+        "shots_on_target_away": 3,
+        "corners_away": 0,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "18",
+          "team": "FC Lorient",
+          "player": "Isaak Touré",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+5",
+          "team": "FC Lorient",
+          "player": "Jean-Victor Makengo",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "le-mans-monaco-2026-11-08",
+      "home": "Le Mans FC",
+      "away": "AS Monaco",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stade Marie-Marvingt",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 48,
+        "shots_home": 19,
+        "shots_on_target_home": 5,
+        "corners_home": 8,
+        "possession_away": 51,
+        "shots_away": 5,
+        "shots_on_target_away": 3,
+        "corners_away": 7,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "40",
+          "team": "AS Monaco",
+          "player": "Mamadou Coulibaly",
+          "type": "Goal"
+        },
+        {
+          "minute": "90",
+          "team": "Le Mans FC",
+          "player": "Erwan Colas",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "lens-marseille-2026-11-08",
+      "home": "RC Lens",
+      "away": "Olympique de Marseille",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-08",
+      "source": "ESPN (site.api.espn.com) — 8 November 2026",
+      "venue": "Stade Bollaert-Delelis",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 41,
+        "shots_home": 13,
+        "shots_on_target_home": 6,
+        "corners_home": 4,
+        "possession_away": 58,
+        "shots_away": 16,
+        "shots_on_target_away": 5,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 8 November 2026"
+      },
+      "events": [
+        {
+          "minute": "2",
+          "team": "Olympique de Marseille",
+          "player": "Amine Gouiri",
+          "type": "Goal"
+        },
+        {
+          "minute": "20",
+          "team": "RC Lens",
+          "player": "Florian Thauvin",
+          "type": "Goal"
+        },
+        {
+          "minute": "82",
+          "team": "Olympique de Marseille",
+          "player": "Keyliane Abdallah",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "leeds-united-tottenham-hotspur-2026-11-07",
+      "home": "Leeds United",
+      "away": "Tottenham Hotspur",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Elland Road",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 39,
+        "shots_home": 16,
+        "shots_on_target_home": 4,
+        "corners_home": 6,
+        "possession_away": 60,
+        "shots_away": 7,
+        "shots_on_target_away": 4,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "79",
+          "team": "Leeds United",
+          "player": "Noah Okafor",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "arsenal-hull-city-2026-11-07",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Emirates Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 66,
+        "shots_home": 21,
+        "shots_on_target_home": 10,
+        "corners_home": 7,
+        "possession_away": 33,
+        "shots_away": 7,
+        "shots_on_target_away": 2,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "72",
+          "team": "Arsenal",
+          "player": "Martin Ødegaard",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "fulham-newcastle-united-2026-11-07",
+      "home": "Fulham",
+      "away": "Newcastle United",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Craven Cottage",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 57,
+        "shots_home": 11,
+        "shots_on_target_home": 5,
+        "corners_home": 3,
+        "possession_away": 42,
+        "shots_away": 9,
+        "shots_on_target_away": 5,
+        "corners_away": 3,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "80",
+          "team": "Newcastle United",
+          "player": "Jacob Murphy",
+          "type": "Goal"
+        },
+        {
+          "minute": "83",
+          "team": "Fulham",
+          "player": "Rodrigo Muniz",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "nottingham-forest-manchester-city-2026-11-07",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "The City Ground",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 3,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 22,
+        "shots_home": 11,
+        "shots_on_target_home": 5,
+        "corners_home": 3,
+        "possession_away": 78,
+        "shots_away": 12,
+        "shots_on_target_away": 4,
+        "corners_away": 7,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "6",
+          "team": "Nottingham Forest",
+          "player": "Jair Cunha",
+          "type": "Goal"
+        },
+        {
+          "minute": "18",
+          "team": "Nottingham Forest",
+          "player": "Liam Delap",
+          "type": "Goal"
+        },
+        {
+          "minute": "52",
+          "team": "Manchester City",
+          "player": "Rayan Cherki",
+          "type": "Goal"
+        },
+        {
+          "minute": "73",
+          "team": "Nottingham Forest",
+          "player": "Liam Delap",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "malaga-racing-santander-2026-11-07",
+      "home": "Málaga CF",
+      "away": "Racing Santander",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "La Rosaleda",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 46,
+        "shots_home": 16,
+        "shots_on_target_home": 8,
+        "corners_home": 6,
+        "possession_away": 53,
+        "shots_away": 21,
+        "shots_on_target_away": 7,
+        "corners_away": 3,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "28",
+          "team": "Málaga CF",
+          "player": "Carlos Dotor",
+          "type": "Goal"
+        },
+        {
+          "minute": "50",
+          "team": "Racing Santander",
+          "player": "Iker Luque",
+          "type": "Goal"
+        },
+        {
+          "minute": "60",
+          "team": "Racing Santander",
+          "player": "Yassir Zabiri",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "espanyol-deportivo-la-coruna-2026-11-07",
+      "home": "RCD Espanyol",
+      "away": "Deportivo La Coruña",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "RCDE Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 63,
+        "shots_home": 11,
+        "shots_on_target_home": 4,
+        "corners_home": 9,
+        "possession_away": 36,
+        "shots_away": 5,
+        "shots_on_target_away": 1,
+        "corners_away": 5,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      }
+    },
+    {
+      "id": "osasuna-athletic-bilbao-2026-11-07",
+      "home": "CA Osasuna",
+      "away": "Athletic Bilbao",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "El Sadar",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 39,
+        "shots_home": 17,
+        "shots_on_target_home": 5,
+        "corners_home": 6,
+        "possession_away": 60,
+        "shots_away": 16,
+        "shots_on_target_away": 4,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "84",
+          "team": "Athletic Bilbao",
+          "player": "Nico Williams",
+          "type": "Goal"
+        },
+        {
+          "minute": "90",
+          "team": "CA Osasuna",
+          "player": "Alejandro Catena",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "valencia-real-madrid-2026-11-07",
+      "home": "Valencia CF",
+      "away": "Real Madrid",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Mestalla Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 3,
+      "stats": {
+        "possession_home": 31,
+        "shots_home": 4,
+        "shots_on_target_home": 2,
+        "corners_home": 2,
+        "possession_away": 68,
+        "shots_away": 19,
+        "shots_on_target_away": 11,
+        "corners_away": 5,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "28",
+          "team": "Real Madrid",
+          "player": "Federico Valverde",
+          "type": "Goal"
+        },
+        {
+          "minute": "36",
+          "team": "Real Madrid",
+          "player": "Arda Güler",
+          "type": "Goal"
+        },
+        {
+          "minute": "75",
+          "team": "Real Madrid",
+          "player": "Kylian Mbappé",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "cagliari-frosinone-2026-11-07",
+      "home": "Cagliari Calcio",
+      "away": "Frosinone Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Unipol Domus",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 36,
+        "shots_home": 14,
+        "shots_on_target_home": 4,
+        "corners_home": 3,
+        "possession_away": 63,
+        "shots_away": 29,
+        "shots_on_target_away": 9,
+        "corners_away": 13,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "38",
+          "team": "Cagliari Calcio",
+          "player": "Michel Adopo",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "torino-lecce-2026-11-07",
+      "home": "Torino FC",
+      "away": "US Lecce",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Stadio Olimpico Grande Torino",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 64,
+        "shots_home": 9,
+        "shots_on_target_home": 2,
+        "corners_home": 4,
+        "possession_away": 35,
+        "shots_away": 6,
+        "shots_on_target_away": 1,
+        "corners_away": 5,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "60",
+          "team": "Torino FC",
+          "player": "Kialonda Gaspar",
+          "type": "Goal"
+        },
+        {
+          "minute": "73",
+          "team": "US Lecce",
+          "player": "Daniel Bragança",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "parma-bologna-2026-11-07",
+      "home": "Parma Calcio",
+      "away": "Bologna FC",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Ennio Tardini",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 31,
+        "shots_home": 11,
+        "shots_on_target_home": 2,
+        "corners_home": 1,
+        "possession_away": 68,
+        "shots_away": 33,
+        "shots_on_target_away": 10,
+        "corners_away": 15,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "53",
+          "team": "Bologna FC",
+          "player": "Arthur Theate",
+          "type": "Goal"
+        },
+        {
+          "minute": "72",
+          "team": "Bologna FC",
+          "player": "Riccardo Orsolini",
+          "type": "Goal"
+        },
+        {
+          "minute": "81",
+          "team": "Parma Calcio",
+          "player": "Vincent Sierro",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "roma-sassuolo-2026-11-07",
+      "home": "AS Roma",
+      "away": "US Sassuolo Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Olimpico",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 3,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 65,
+        "shots_home": 28,
+        "shots_on_target_home": 9,
+        "corners_home": 12,
+        "possession_away": 34,
+        "shots_away": 6,
+        "shots_on_target_away": 1,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "27",
+          "team": "AS Roma",
+          "player": "Mario Hermoso",
+          "type": "Goal"
+        },
+        {
+          "minute": "30",
+          "team": "AS Roma",
+          "player": "Sebastian Walukiewicz",
+          "type": "Goal"
+        },
+        {
+          "minute": "58",
+          "team": "AS Roma",
+          "player": "Rodrigo Mora",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "borussia-dortmund-elversberg-2026-11-07",
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Signal Iduna Park",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 51,
+        "shots_home": 19,
+        "shots_on_target_home": 6,
+        "corners_home": 6,
+        "possession_away": 48,
+        "shots_away": 16,
+        "shots_on_target_away": 7,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "55",
+          "team": "Borussia Dortmund",
+          "player": "Felix Nmecha",
+          "type": "Goal"
+        },
+        {
+          "minute": "71",
+          "team": "Borussia Dortmund",
+          "player": "Felix Nmecha",
+          "type": "Goal"
+        },
+        {
+          "minute": "81",
+          "team": "SV Elversberg",
+          "player": "Noel Futkeu",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "mainz-bayern-munich-2026-11-07",
+      "home": "1. FSV Mainz 05",
+      "away": "FC Bayern Munich",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "MEWA ARENA",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 31,
+        "shots_home": 11,
+        "shots_on_target_home": 1,
+        "corners_home": 7,
+        "possession_away": 68,
+        "shots_away": 26,
+        "shots_on_target_away": 9,
+        "corners_away": 8,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "14",
+          "team": "FC Bayern Munich",
+          "player": "Joshua Kimmich",
+          "type": "Goal"
+        },
+        {
+          "minute": "57",
+          "team": "FC Bayern Munich",
+          "player": "Lennart Karl",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+2",
+          "team": "1. FSV Mainz 05",
+          "player": "Phillip Tietz",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "rb-leipzig-augsburg-2026-11-07",
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Red Bull Arena",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 5,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 64,
+        "shots_home": 17,
+        "shots_on_target_home": 7,
+        "corners_home": 2,
+        "possession_away": 35,
+        "shots_away": 13,
+        "shots_on_target_away": 8,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "1",
+          "team": "FC Augsburg",
+          "player": "Anton Kade",
+          "type": "Goal"
+        },
+        {
+          "minute": "34",
+          "team": "RB Leipzig",
+          "player": "Ezechiel Banzuzi",
+          "type": "Goal"
+        },
+        {
+          "minute": "35",
+          "team": "RB Leipzig",
+          "player": "Christopher Nkunku",
+          "type": "Goal"
+        },
+        {
+          "minute": "45+1",
+          "team": "RB Leipzig",
+          "player": "David Raum",
+          "type": "Goal"
+        },
+        {
+          "minute": "60",
+          "team": "RB Leipzig",
+          "player": "Rômulo",
+          "type": "Goal"
+        },
+        {
+          "minute": "66",
+          "team": "RB Leipzig",
+          "player": "Christoph Baumgartner",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+2",
+          "team": "FC Augsburg",
+          "player": "Uchenna Ogundu",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "paderborn-eintracht-frankfurt-2026-11-07",
+      "home": "SC Paderborn 07",
+      "away": "Eintracht Frankfurt",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Home Deluxe Arena",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 2,
+      "stats": {
+        "possession_home": 50,
+        "shots_home": 11,
+        "shots_on_target_home": 3,
+        "corners_home": 2,
+        "possession_away": 49,
+        "shots_away": 16,
+        "shots_on_target_away": 3,
+        "corners_away": 6,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "23",
+          "team": "Eintracht Frankfurt",
+          "player": "Jonathan Burkardt",
+          "type": "Goal"
+        },
+        {
+          "minute": "45",
+          "team": "SC Paderborn 07",
+          "player": "Raphael Obermair",
+          "type": "Goal"
+        },
+        {
+          "minute": "73",
+          "team": "SC Paderborn 07",
+          "player": "Marvin Pieringer",
+          "type": "Goal"
+        },
+        {
+          "minute": "90+3",
+          "team": "Eintracht Frankfurt",
+          "player": "Jonathan Burkardt",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "stuttgart-werder-bremen-2026-11-07",
+      "home": "VfB Stuttgart",
+      "away": "SV Werder Bremen",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "MHPArena",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 42,
+        "shots_home": 13,
+        "shots_on_target_home": 5,
+        "corners_home": 4,
+        "possession_away": 57,
+        "shots_away": 24,
+        "shots_on_target_away": 5,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "7",
+          "team": "VfB Stuttgart",
+          "player": "Maximilian Mittelstädt",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "auxerre-paris-fc-2026-11-07",
+      "home": "AJ Auxerre",
+      "away": "Paris FC",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Stade de l'Abbé-Deschamps",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 35,
+        "shots_home": 7,
+        "shots_on_target_home": 2,
+        "corners_home": 1,
+        "possession_away": 64,
+        "shots_away": 10,
+        "shots_on_target_away": 3,
+        "corners_away": 5,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "63",
+          "team": "Paris FC",
+          "player": "Lassine Sinayoko",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "psg-troyes-2026-11-07",
+      "home": "Paris Saint-Germain",
+      "away": "ESTAC Troyes",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-07",
+      "source": "ESPN (site.api.espn.com) — 7 November 2026",
+      "venue": "Parc des Princes",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 1,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 73,
+        "shots_home": 15,
+        "shots_on_target_home": 7,
+        "corners_home": 6,
+        "possession_away": 27,
+        "shots_away": 8,
+        "shots_on_target_away": 3,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 7 November 2026"
+      },
+      "events": [
+        {
+          "minute": "39",
+          "team": "Paris Saint-Germain",
+          "player": "Illia Zabarnyi",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "everton-coventry-city-2026-11-06",
+      "home": "Everton",
+      "away": "Coventry City",
+      "league": "premier-league",
+      "league_name": "Premier League",
+      "date": "2026-11-06",
+      "source": "ESPN (site.api.espn.com) — 6 November 2026",
+      "venue": "Hill Dickinson Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 3,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 49,
+        "shots_home": 16,
+        "shots_on_target_home": 7,
+        "corners_home": 2,
+        "possession_away": 50,
+        "shots_away": 15,
+        "shots_on_target_away": 4,
+        "corners_away": 2,
+        "source": "ESPN (site.api.espn.com) — 6 November 2026"
+      },
+      "events": [
+        {
+          "minute": "52",
+          "team": "Coventry City",
+          "player": "Yann Gboho",
+          "type": "Goal"
+        },
+        {
+          "minute": "56",
+          "team": "Everton",
+          "player": "Thierno Barry",
+          "type": "Goal"
+        },
+        {
+          "minute": "61",
+          "team": "Everton",
+          "player": "Thierno Barry",
+          "type": "Goal"
+        },
+        {
+          "minute": "81",
+          "team": "Everton",
+          "player": "Kiernan Dewsbury-Hall",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "sevilla-alaves-2026-11-06",
+      "home": "Sevilla FC",
+      "away": "Deportivo Alavés",
+      "league": "la-liga",
+      "league_name": "La Liga",
+      "date": "2026-11-06",
+      "source": "ESPN (site.api.espn.com) — 6 November 2026",
+      "venue": "Ramón Sánchez Pizjuán Stadium",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 0,
+      "away_goals": 0,
+      "stats": {
+        "possession_home": 60,
+        "shots_home": 13,
+        "shots_on_target_home": 3,
+        "corners_home": 5,
+        "possession_away": 39,
+        "shots_away": 9,
+        "shots_on_target_away": 2,
+        "corners_away": 4,
+        "source": "ESPN (site.api.espn.com) — 6 November 2026"
+      }
+    },
+    {
+      "id": "venezia-udinese-2026-11-06",
+      "home": "Venezia FC",
+      "away": "Udinese Calcio",
+      "league": "serie-a",
+      "league_name": "Serie A",
+      "date": "2026-11-06",
+      "source": "ESPN (site.api.espn.com) — 6 November 2026",
+      "venue": "Stadio Pier Luigi Penzo",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 2,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 46,
+        "shots_home": 15,
+        "shots_on_target_home": 4,
+        "corners_home": 3,
+        "possession_away": 53,
+        "shots_away": 13,
+        "shots_on_target_away": 5,
+        "corners_away": 7,
+        "source": "ESPN (site.api.espn.com) — 6 November 2026"
+      },
+      "events": [
+        {
+          "minute": "53",
+          "team": "Venezia FC",
+          "player": "Toma Basic",
+          "type": "Goal"
+        },
+        {
+          "minute": "57",
+          "team": "Udinese Calcio",
+          "player": "Matías Moreno",
+          "type": "Goal"
+        },
+        {
+          "minute": "65",
+          "team": "Venezia FC",
+          "player": "Enrique Perez",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "hamburg-borussia-monchengladbach-2026-11-06",
+      "home": "Hamburger SV",
+      "away": "Borussia Mönchengladbach",
+      "league": "bundesliga",
+      "league_name": "Bundesliga",
+      "date": "2026-11-06",
+      "source": "ESPN (site.api.espn.com) — 6 November 2026",
+      "venue": "Volksparkstadion",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 3,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 61,
+        "shots_home": 18,
+        "shots_on_target_home": 9,
+        "corners_home": 5,
+        "possession_away": 38,
+        "shots_away": 19,
+        "shots_on_target_away": 6,
+        "corners_away": 3,
+        "source": "ESPN (site.api.espn.com) — 6 November 2026"
+      },
+      "events": [
+        {
+          "minute": "11",
+          "team": "Hamburger SV",
+          "player": "Miro Muheim",
+          "type": "Goal"
+        },
+        {
+          "minute": "44",
+          "team": "Borussia Mönchengladbach",
+          "player": "Robin Hack",
+          "type": "Goal"
+        },
+        {
+          "minute": "59",
+          "team": "Hamburger SV",
+          "player": "Shafiq Nandja",
+          "type": "Goal"
+        },
+        {
+          "minute": "70",
+          "team": "Hamburger SV",
+          "player": "Albert Grønbaek",
+          "type": "Goal"
+        }
+      ]
+    },
+    {
+      "id": "toulouse-strasbourg-2026-11-06",
+      "home": "Toulouse FC",
+      "away": "RC Strasbourg Alsace",
+      "league": "ligue-1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-06",
+      "source": "ESPN (site.api.espn.com) — 6 November 2026",
+      "venue": "Stadium Municipal de Toulouse",
+      "channel": "beIN Sports",
+      "status": "finished",
+      "home_goals": 3,
+      "away_goals": 1,
+      "stats": {
+        "possession_home": 47,
+        "shots_home": 10,
+        "shots_on_target_home": 5,
+        "corners_home": 7,
+        "possession_away": 52,
+        "shots_away": 9,
+        "shots_on_target_away": 4,
+        "corners_away": 1,
+        "source": "ESPN (site.api.espn.com) — 6 November 2026"
+      },
+      "events": [
+        {
+          "minute": "45+1",
+          "team": "Toulouse FC",
+          "player": "Santiago Hidalgo",
+          "type": "Goal"
+        },
+        {
+          "minute": "56",
+          "team": "Toulouse FC",
+          "player": "Mark McKenzie",
+          "type": "Goal"
+        },
+        {
+          "minute": "67",
+          "team": "RC Strasbourg Alsace",
+          "player": "Giovanni Reyna",
+          "type": "Goal"
+        },
+        {
+          "minute": "76",
+          "team": "Toulouse FC",
+          "player": "Thomas Jørgensen",
+          "type": "Goal"
+        }
+      ]
+    }
+  ]
+}

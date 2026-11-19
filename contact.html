@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us | MatchPulse</title>
+<meta name="description" content="Contact the MatchPulse team: suggestions, corrections, advertising partnerships.">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="ball">⚽</span><span>MatchPulse<small>LIVE FOOTBALL</small></span></a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="main-nav"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="matches.html">Matches</a></li>
+      <li><a href="standings.html">Standings</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="offers.html">Offers</a></li>
+    </ul></nav>
+  </div>
+</header>
+<!-- AdSense: leaderboard (728x90) -->
+<div class="container"><div class="ad-slot"><div class="ad-leaderboard">Ad space — Leaderboard 970×250</div></div></div>
+<div class="ticker-wrap"><div class="container ticker">
+  <span class="ticker-label">LIVE</span>
+  <div class="ticker-track" id="ticker-track"><span class="ticker-item">Loading…</span></div>
+</div></div>
+
+<main class="container page" style="max-width:680px">
+  <h1>Contact us</h1>
+  <p style="color:var(--muted)">Write to us with any suggestion, correction, or question about advertising on the site — we usually reply within 48 hours.</p>
+  <form id="contact-form" class="contact-form" novalidate>
+    <div class="form-row">
+      <div class="form-group"><label for="c-name">Full name *</label><input id="c-name" name="name" type="text" required></div>
+      <div class="form-group"><label for="c-email">Email address *</label><input id="c-email" name="email" type="email" required dir="ltr"></div>
+    </div>
+    <div class="form-group"><label for="c-subject">Subject *</label>
+      <select id="c-subject" name="subject">
+        <option>Suggestion</option><option>Correction</option><option>Advertising &amp; partnerships</option><option>Other topic</option>
+      </select>
+    </div>
+    <div class="form-group"><label for="c-msg">Your message *</label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+    <button class="btn" type="submit">Send message</button>
+    <div class="form-note" role="status"></div>
+  </form>
+  <p style="color:var(--muted);font-size:.85rem;margin-top:18px">💡 This form is a demo (front-end only). To actually receive messages, connect it to a service such as Formspree or Netlify Forms — see the README.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>⚽ MatchPulse</h4><p style="color:var(--muted);font-size:.9rem">Your home for football: live scores, league tables and the latest news.</p></div>
+      <div><h4>Site sections</h4><ul>
+        <li><a href="matches.html">Today's matches</a></li><li><a href="standings.html">League tables</a></li>
+        <li><a href="news.html">Latest news</a></li><li><a href="offers.html">Free offers</a></li><li><a href="league-botola.html">Botola Pro</a></li></ul></div>
+      <div><h4>Information</h4><ul>
+        <li><a href="about.html">About us</a></li><li><a href="contact.html">Contact us</a></li><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span class="js-year">2026</span> MatchPulse — All rights reserved.</span><span>Last updated: Thursday 19 November 2026</span></div>
+  </div>
+</footer>
+<div class="anchored-ad"><span>Ad space for mobile</span><button class="close-ad">✕</button></div>
+<script src="assets/js/data-fallback.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.getElementById("contact-form").addEventListener("submit",function(e){
+  e.preventDefault();
+  const name=document.getElementById("c-name").value.trim(),
+        email=document.getElementById("c-email").value.trim(),
+        msg=document.getElementById("c-msg").value.trim(),
+        note=this.querySelector(".form-note");
+  if(!name||!email||!msg){note.textContent="⚠ Please fill in all required fields.";return;}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){note.textContent="⚠ Please enter a valid email address.";return;}
+  note.textContent="✅ Thanks "+name+"! Your message was received — we will reply soon.";
+  this.reset();
+});
+document.addEventListener("DOMContentLoaded",()=>window.renderTicker("ticker-track"));
+</script>
+</body>
+</html>

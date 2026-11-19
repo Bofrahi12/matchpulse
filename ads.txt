@@ -1,0 +1,5 @@
+# ads.txt — Authorized Digital Sellers
+# Verification file for Google AdSense authorized sellers
+# After your AdSense account is approved, replace the line below with the one AdSense gives you
+# Format: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
