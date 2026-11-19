@@ -1578,20 +1578,47 @@ body { font-family: var(--font); }
 /* Table team cell wraps instead of horizontal scrolling on phones (390px) */
 .standings-table td.team-cell { white-space: normal; }
 .standings-table td.team-cell img { width: 20px; height: 20px; object-fit: contain; vertical-align: -4px; margin-inline-end: 6px; }
-/* Offers section (live CPA offers) */
+/* Sponsored ads (live CPA offers) — display-ad look, NOT content cards */
 .offers-section { margin: 28px 0; }
 .offers-section h2 { font-size: 1.25rem; }
 .ad-label { font-size: 11px; color: #64748b; border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
 .offers-note { color: #64748b; font-size: 13px; }
-.offers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-.offer-card { display: block; border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: var(--card); text-decoration: none; color: inherit; }
-.offer-card:hover { border-color: var(--accent); }
-.offer-name { font-weight: 800; }
-.offer-payout { font-size: 1.1rem; font-weight: 800; color: var(--accent); margin: 4px 0; }
-.offer-meta { font-size: 12px; color: #64748b; }
-.offer-cta { margin-top: 8px; font-weight: 700; }
-.offer-detail { border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 14px 0; background: var(--card); }
-.offer-btn { display: inline-block; margin-top: 8px; }
+.ad-kicker { text-align: center; font-size: 11px; letter-spacing: 3px; color: #64748b; text-transform: uppercase; margin: 0 0 8px; }
+.ad-tag { display: inline-block; align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--ad, #22e07a); border: 1px solid var(--ad, #22e07a); border-radius: 999px; padding: 2px 8px; margin-bottom: 6px; }
+/* --- the ad unit: horizontal display ad --- */
+.ad-unit, .ad-leaderboard-unit { position: relative; display: flex; gap: 16px; align-items: center; padding: 18px; border-radius: 14px; background: linear-gradient(135deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); text-decoration: none; color: inherit; overflow: hidden; }
+.ad-unit:hover, .ad-leaderboard-unit:hover, .ad-mini:hover { border-color: var(--ad, #22e07a); }
+.ad-sponsored { position: absolute; top: 0; right: 0; background: #f59e0b; color: #111; font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 0 0 0 8px; }
+.ad-visual { flex: 0 0 56px; width: 56px; height: 56px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; background: var(--ad, #22e07a); }
+.ad-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ad-headline { font-weight: 800; font-size: 1.05rem; line-height: 1.25; }
+.ad-benefit { font-size: .9rem; color: #c6d0e8; margin-top: 3px; }
+.ad-meta { font-size: 12px; color: #8b98b8; margin-top: 5px; }
+.ad-cta { flex: 0 0 auto; background: var(--ad, #22e07a); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .85rem; padding: 12px 18px; border-radius: 999px; white-space: nowrap; text-align: center; }
+.ad-stack { display: grid; gap: 12px; }
+@media (min-width: 700px) { .ad-stack { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .ad-unit { flex-wrap: wrap; } .ad-unit .ad-cta { width: 100%; } }
+/* --- leaderboard banner (homepage): wide horizontal ad --- */
+.ad-leaderboard-wrap { margin: 28px 0; }
+.ad-leaderboard-unit { padding: 22px; border-radius: 16px; }
+.ad-leaderboard-unit .ad-visual { flex-basis: 72px; width: 72px; height: 72px; font-size: 36px; border-radius: 16px; }
+.ad-leaderboard-unit .ad-headline { font-size: 1.35rem; }
+.ad-leaderboard-unit .ad-cta { padding: 14px 26px; font-size: 1rem; }
+.ad-grid { display: grid; gap: 12px; margin-top: 12px; }
+@media (min-width: 700px) { .ad-grid { grid-template-columns: repeat(3, 1fr); } }
+/* --- vertical mini ad card (300x250 style) --- */
+.ad-mini { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 18px 16px 16px; border-radius: 14px; background: linear-gradient(160deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); text-decoration: none; color: inherit; overflow: hidden; }
+.ad-mini .ad-visual { width: 52px; height: 52px; font-size: 26px; margin-top: 4px; }
+.ad-mini .ad-cta { margin-top: 8px; }
+/* --- showcase rows (offers.html): large ad units --- */
+.ad-showcase { position: relative; display: flex; gap: 18px; padding: 22px 20px; border-radius: 16px; background: linear-gradient(135deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); margin: 16px 0; overflow: hidden; }
+.ad-showcase .ad-visual { flex: 0 0 88px; width: 88px; height: 88px; font-size: 44px; border-radius: 16px; }
+.ad-showcase .ad-headline { font-size: 1.3rem; margin: 2px 0 0; }
+.ad-showcase .ad-benefit { font-size: .95rem; }
+.ad-facts { font-size: .85rem; color: #c6d0e8; margin: 8px 0 0; }
+.ad-cta-btn { display: inline-block; margin-top: 14px; background: var(--ad, #22e07a); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .95rem; padding: 13px 24px; border-radius: 999px; text-decoration: none; }
+.ad-cta-btn:hover { filter: brightness(1.12); }
+@media (max-width: 640px) { .ad-showcase, .ad-leaderboard-unit { flex-wrap: wrap; } .ad-leaderboard-unit .ad-cta, .ad-cta-btn { width: 100%; text-align: center; } }
 .offers-teaser { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 14px 0; background: var(--card); font-weight: 700; }
 .offers-teaser a { text-decoration: none; color: inherit; }
 '''
@@ -2023,45 +2050,115 @@ FONTS = """<link rel="preconnect" href="https://fonts.googleapis.com">
 
 
 # --- MatchPulse CPA offers (live, from data/offers.json — CPAlead) ---------
+# AD-STYLE presentation (redesign 19 Nov 2026, user order: offers must LOOK
+# like ads, not a list): sponsored ad units with a SPONSORED badge, a brand-
+# colour visual tile (plain symbol, no invented logos, no product photos), a
+# bold promo headline, a benefit line and a big CTA button. Links / payouts /
+# geo come straight from data/offers.json and are NEVER edited here.
 OFFERS = json.load(open(os.path.join(ROOT, "data", "offers.json"), encoding="utf-8"))["offers"]
 
-def offers_html():
-    """Sponsored offers section (#ad) — rendered on homepage, league, tables,
-    news and offers pages. Links are the exact CPAlead tracking URLs."""
-    cards = []
-    for o in OFFERS:
-        cards.append(f"""
-    <a class="offer-card" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener">
-      <div class="offer-name">{o["name"]}</div>
-      <div class="offer-payout">{o["payout"]}</div>
-      <div class="offer-meta">{o["geo"]} &middot; {o["device"]}</div>
-      <div class="offer-cta">Claim offer &rarr;</div>
-    </a>""")
+# Per-offer ad identity: (visual icon, brand colour).
+AD_STYLE = {
+    "hidden-gems": ("💎", "#14b8a6"),
+    "free-vpn": ("🔒", "#3b82f6"),
+    "capcut-pro": ("🎬", "#8b5cf6"),
+    "complete-surveys": ("📝", "#d97706"),
+}
+
+def _ad_style(o):
+    return AD_STYLE.get(o["id"], ("🎁", "#22e07a"))
+
+def ad_card(o):
+    """One sponsored ad unit (horizontal) — display-ad look."""
+    icon, color = _ad_style(o)
+    return f"""
+    <a class="ad-unit" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener" style="--ad:{color}">
+      <span class="ad-sponsored">Sponsored</span>
+      <span class="ad-visual" aria-hidden="true">{icon}</span>
+      <span class="ad-body">
+        <span class="ad-headline">{o["name"]}</span>
+        <span class="ad-benefit">{o.get("blurb", "")}</span>
+        <span class="ad-meta">{o["geo"]} &middot; {o["device"]}</span>
+      </span>
+      <span class="ad-cta">{o.get("cta", "Claim this offer")} &rarr;</span>
+    </a>"""
+
+def ad_mini(o):
+    """One sponsored ad unit (vertical mini card, 300x250 style)."""
+    icon, color = _ad_style(o)
+    return f"""
+    <a class="ad-mini" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener" style="--ad:{color}">
+      <span class="ad-sponsored">Sponsored</span>
+      <span class="ad-visual" aria-hidden="true">{icon}</span>
+      <span class="ad-headline">{o["name"]}</span>
+      <span class="ad-benefit">{o.get("blurb", "")}</span>
+      <span class="ad-meta">{o["geo"]} &middot; {o["device"]}</span>
+      <span class="ad-cta">{o.get("cta", "Claim this offer")} &rarr;</span>
+    </a>"""
+
+def ad_leaderboard(o):
+    """Wide horizontal leaderboard banner (970x250 style) for the featured offer."""
+    icon, color = _ad_style(o)
+    return f"""
+    <a class="ad-leaderboard-unit" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener" style="--ad:{color}">
+      <span class="ad-sponsored">Sponsored</span>
+      <span class="ad-visual" aria-hidden="true">{icon}</span>
+      <span class="ad-body">
+        <span class="ad-tag">{o.get("tag", "Featured")}</span>
+        <span class="ad-headline">{o["name"]}</span>
+        <span class="ad-benefit">{o.get("blurb", "")}</span>
+        <span class="ad-meta">{o["geo"]} &middot; {o["device"]}</span>
+      </span>
+      <span class="ad-cta">{o.get("cta", "Claim this offer")} &rarr;</span>
+    </a>"""
+
+def offers_html(variant="box"):
+    """Sponsored offers as display ads (#ad). variant="leaderboard" (homepage:
+    featured offer as a wide banner + the rest as mini ad cards);
+    variant="box" (default: tables, news, league, fixtures — compact ad stack).
+    Links are the exact CPAlead tracking URLs."""
+    if variant == "leaderboard":
+        feat = next((o for o in OFFERS if o.get("tag") == "Featured"), OFFERS[0])
+        rest = [o for o in OFFERS if o is not feat]
+        return f"""
+<section class="offers-section ad-leaderboard-wrap" id="offers">
+  <p class="ad-kicker">Advertisement <span class="ad-label">#ad</span></p>
+  {ad_leaderboard(feat)}
+  <div class="ad-grid">{''.join(ad_mini(o) for o in rest)}
+  </div>
+  <p class="offers-note">Sponsored offers — we may earn a commission if you sign up. Available in the listed countries only. No betting, no dating, no popups.</p>
+</section>"""
     return f"""
 <section class="offers-section" id="offers">
-  <h2>🎁 Free offers &amp; rewards <span class="ad-label">#ad</span></h2>
+  <h2>Sponsored offers <span class="ad-label">#ad</span></h2>
   <p class="offers-note">Sponsored offers — we may earn a commission if you sign up. Available in the listed countries only. No betting, no dating, no popups.</p>
-  <div class="offers-grid">{''.join(cards)}
+  <div class="ad-stack">{''.join(ad_card(o) for o in OFFERS)}
   </div>
 </section>"""
 
 def offers_page_html():
     rows = []
     for o in OFFERS:
+        icon, color = _ad_style(o)
         cap = (" &middot; <strong>Daily cap:</strong> " + str(o["cap"])) if o.get("cap") and o["cap"] != "No daily cap" else ""
         rows.append(f"""
-    <div class="offer-detail">
-      <h3>{o["name"]}</h3>
-      <p><strong>Payout:</strong> {o["payout"]} &middot; <strong>Countries:</strong> {o["geo"]} &middot; <strong>Devices:</strong> {o["device"]}{cap}</p>
-      <p>{o.get("blurb", "")}</p>
-      <a class="btn offer-btn" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener">{o.get("cta", "Claim this offer")} &rarr;</a>
+    <div class="ad-showcase" style="--ad:{color}">
+      <span class="ad-sponsored">Sponsored</span>
+      <span class="ad-visual" aria-hidden="true">{icon}</span>
+      <div class="ad-body">
+        <span class="ad-tag">{o.get("tag", "")}</span>
+        <h3 class="ad-headline">{o["name"]}</h3>
+        <p class="ad-benefit">{o.get("blurb", "")}</p>
+        <p class="ad-facts"><strong>Payout:</strong> {o["payout"]} &middot; <strong>Countries:</strong> {o["geo"]} &middot; <strong>Devices:</strong> {o["device"]}{cap}</p>
+        <a class="ad-cta-btn" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener">{o.get("cta", "Claim this offer")} &rarr;</a>
+      </div>
     </div>""")
     tpl = """<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free offers &amp; rewards | MatchPulse</title>
+<title>Sponsored offers &amp; rewards | MatchPulse</title>
 <meta name="description" content="Free sponsored offers for MatchPulse readers: free VPN for Windows, CapCut Pro trial, surveys and more. #ad">
 <link rel="canonical" href="{BASE}/offers.html">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
@@ -2070,7 +2167,7 @@ def offers_page_html():
 <body>
 {header}
 <main class="wrap page">
-  <h1>🎁 Free offers &amp; rewards <span class="ad-label">#ad</span></h1>
+  <h1>Sponsored offers <span class="ad-label">#ad</span></h1>
   <p class="offers-note">Sponsored offers — we may earn a commission if you sign up. Available in the listed countries only.</p>
   {rows}
 </main>
@@ -2336,7 +2433,7 @@ def main():
     <p class="data-note"><b>Fixture sources:</b> ESPN (site.api.espn.com) for the five European leagues + FRMF.ma for Botola Pro — Last checked: {BUILD_DATE_EN}. All times UTC.</p>
   </section>
 
-  {offers_html()}
+  {offers_html("leaderboard")}
 
   <section class="section">
     <div class="section-head"><h2>Latest news</h2><a class="more" href="news.html">All news →</a></div>
