@@ -107,10 +107,21 @@
     el.innerHTML = head + (items.join("") || "<span class='ticker-item'>No fixtures scheduled in the six leagues right now</span>");
   };
 
-  window.posClass = function (pos, leagueId) {
+  window.posClass = function (pos, leagueId, n) {
+    if (leagueId === "ligue-1") {
+      if (pos <= 3) return "pos-ucl";
+      if (pos === 4 || pos === 16) return "pos-playoff";
+      if (pos >= 17) return "pos-rel";
+      return "";
+    }
+    if (leagueId === "botola") {
+      if (pos <= 2) return "pos-ucl";
+      if (pos === 3) return "pos-playoff";
+      if (pos >= 15) return "pos-rel";
+      return "";
+    }
     if (pos <= 4) return "pos-ucl";
-    if (leagueId === "botola") return pos >= 15 ? "pos-rel" : "";
-    if (pos >= 18) return "pos-rel";
+    if (pos >= (n || 20) - 2) return "pos-rel";
     return "";
   };
 
@@ -125,7 +136,7 @@
   window.standingsTableHTML = function (league, limit) {
     const rows = (limit ? league.table.slice(0, limit) : league.table).map(r => {
       if (r.placeholder) return `<tr><td>${r.pos}</td><td class="team" style="color:var(--muted)">${r.team}</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><b>—</b></td></tr>`;
-      return `<tr class="${window.posClass(r.pos, league.id)}">
+      return `<tr class="${window.posClass(r.pos, league.id, league.table.length)}">
         <td>${r.pos}</td><td class="team">${window.logoFor(r.team)}${r.team}</td><td>${cell(r.p)}</td>
         <td>${cell(r.w)}</td><td>${cell(r.d)}</td><td>${cell(r.l)}</td>
         <td>${gdTxt(r)}</td><td><b>${cell(r.pts)}</b></td></tr>`;
@@ -140,18 +151,21 @@
     const isFin = m.status === "finished";
     const score = isLive || isFin
       ? `<span class="score${isLive ? " live" : ""}">${m.home_goals} - ${m.away_goals}</span>`
-      : `<span class="score">${m.time || "—"}</span>`;
+      : `<span class="score">–</span>`;
     const badge = isLive
       ? `<span class="status-badge live">● LIVE ${m.minute || ""}'</span>`
       : isFin
         ? `<span class="status-badge finished">Full time</span>`
         : `<span class="status-badge upcoming">Not started yet</span>`;
+    const shortDate = iso => iso ? new Date(iso + "T12:00:00").toLocaleDateString("en-GB", {day: "numeric", month: "short"}) : "";
     const time = isLive
-      ? `<span class="time">${m.minute || ""}'</span>`
-      : `<span class="time">${m.date_label || m.date || ""} ${m.time || ""}</span>`;
+      ? `<span class="time live-min">${m.minute || ""}'</span>`
+      : isFin
+        ? `<span class="time">${shortDate(m.date)}</span>`
+        : `<span class="time">${shortDate(m.date)}<br>${m.time || "TBC"}</span>`;
     const inner = `<div class="match-row">
       <span class="lg">${m.league_name || ""}${badge}</span>
-      <span class="team">${window.logoFor(m.home)}${m.home}</span>${score}<span class="team away">${window.logoFor(m.away)}${m.away}</span>${time}
+      ${time}<span class="team">${window.logoFor(m.home)}${m.home}</span>${score}<span class="team away">${window.logoFor(m.away)}${m.away}</span>
     </div>`;
     return m.id ? `<a class="match-link" href="match.html?id=${m.id}">${inner}</a>` : inner;
   };

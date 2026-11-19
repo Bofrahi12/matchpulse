@@ -550,7 +550,14 @@ OFFERS_CODE = '''
 # colour visual tile (plain symbol, no invented logos, no product photos), a
 # bold promo headline, a benefit line and a big CTA button. Links / payouts /
 # geo come straight from data/offers.json and are NEVER edited here.
-OFFERS = json.load(open(os.path.join(ROOT, "data", "offers.json"), encoding="utf-8"))["offers"]
+_OFFERS_DOC = json.load(open(os.path.join(ROOT, "data", "offers.json"), encoding="utf-8"))
+OFFERS = _OFFERS_DOC["offers"]
+# Mobidea Mainstream Smartlink — DISABLED by default. The user's activated
+# Dashboard link is UNVERIFIED (old bundle used cpdperfomance.com/smartlink?
+# lp=713; the activated link is on a different domain; Mobidea login was
+# blocked 2026-11-15). NEVER guess the URL: the slot renders ONLY when
+# data/offers.json mobidea_smartlink.enabled=true AND url is a verified link.
+SMARTLINK = _OFFERS_DOC.get("mobidea_smartlink", {})
 
 # Per-offer ad identity: (visual icon, brand colour).
 AD_STYLE = {
@@ -607,6 +614,25 @@ def ad_leaderboard(o):
       <span class="ad-cta">{o.get("cta", "Claim this offer")} &rarr;</span>
     </a>"""
 
+def smartlink_html():
+    """Mobidea Smartlink ad unit — same ad system (Sponsored badge + #ad).
+    Returns "" unless enabled AND a verified URL is set in data/offers.json."""
+    url = (SMARTLINK.get("url") or "").strip()
+    if not SMARTLINK.get("enabled") or not url:
+        return ""
+    return f"""
+    <a class="ad-unit ad-smartlink" href="{url}" target="_blank" rel="nofollow sponsored noopener" style="--ad:#f97316">
+      <span class="ad-sponsored">Sponsored</span>
+      <span class="ad-visual" aria-hidden="true">🔗</span>
+      <span class="ad-body">
+        <span class="ad-tag">{SMARTLINK.get("tag", "Smartlink")}</span>
+        <span class="ad-headline">{SMARTLINK.get("label", "More free offers")}</span>
+        <span class="ad-benefit">{SMARTLINK.get("blurb", "")}</span>
+        <span class="ad-meta">Sponsored &middot; Worldwide</span>
+      </span>
+      <span class="ad-cta">{SMARTLINK.get("cta", "See offers")} &rarr;</span>
+    </a>"""
+
 def offers_html(variant="box"):
     """Sponsored offers as display ads (#ad). variant="leaderboard" (homepage:
     featured offer as a wide banner + the rest as mini ad cards);
@@ -621,13 +647,14 @@ def offers_html(variant="box"):
   {ad_leaderboard(feat)}
   <div class="ad-grid">{''.join(ad_mini(o) for o in rest)}
   </div>
+  {smartlink_html()}
   <p class="offers-note">Sponsored offers — we may earn a commission if you sign up. Available in the listed countries only. No betting, no dating, no popups.</p>
 </section>"""
     return f"""
 <section class="offers-section" id="offers">
   <h2>Sponsored offers <span class="ad-label">#ad</span></h2>
   <p class="offers-note">Sponsored offers — we may earn a commission if you sign up. Available in the listed countries only. No betting, no dating, no popups.</p>
-  <div class="ad-stack">{''.join(ad_card(o) for o in OFFERS)}
+  <div class="ad-stack">{''.join(ad_card(o) for o in OFFERS)}{smartlink_html()}
   </div>
 </section>"""
 
@@ -648,6 +675,8 @@ def offers_page_html():
         <a class="ad-cta-btn" href="{o["url"]}" target="_blank" rel="nofollow sponsored noopener">{o.get("cta", "Claim this offer")} &rarr;</a>
       </div>
     </div>""")
+    if smartlink_html():
+        rows.append(smartlink_html())
     tpl = """<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -672,80 +701,488 @@ def offers_page_html():
 </body>
 </html>"""
     return tpl.replace("{rows}", "".join(rows))
+
+# --- Live scores + table zones (PRO redesign 19 Nov 2026) ------------------
+def live_nav_item(active=""):
+    """Nav 'Live' link with a red count badge while matches are in progress."""
+    n = len(FX_LIVE)
+    cls = "active" if active == "live.html" else ""
+    dot = '<span class="live-dot"></span>' if n else ""
+    cnt = f' <span class="live-count">{n}</span>' if n else ""
+    return f'<li><a href="live.html" class="{cls} live-nav">{dot}Live{cnt}</a></li>'
+
+def zone_class(lid, pos, n):
+    """Table zone colour per league (standard qualification rules — positions
+    are real data; zones are the leagues' official qualification spots):
+    PL/LaLiga/Serie A/Bundesliga top 4 = Champions League, bottom 3 relegated;
+    Ligue 1 top 3 = UCL, 4th = UCL qualifying play-off, 16th = relegation
+    play-off, 17-18 relegated; Botola top 2 = CAF Champions League, 3rd = CAF
+    Confederation Cup, bottom 2 relegated."""
+    if lid == "ligue-1":
+        if pos <= 3:
+            return "pos-ucl"
+        if pos in (4, 16):
+            return "pos-playoff"
+        if pos >= 17:
+            return "pos-rel"
+    elif lid == "botola":
+        if pos <= 2:
+            return "pos-ucl"
+        if pos == 3:
+            return "pos-playoff"
+        if pos >= 15:
+            return "pos-rel"
+    else:
+        if pos <= 4:
+            return "pos-ucl"
+        if pos >= n - 2:
+            return "pos-rel"
+    return ""
+
+def zone_legend(lid):
+    items = {
+        "ligue-1": [("pos-ucl", "Champions League"), ("pos-playoff", "Play-off (UCL qualifying / relegation)"), ("pos-rel", "Relegation")],
+        "botola": [("pos-ucl", "CAF Champions League"), ("pos-playoff", "CAF Confederation Cup"), ("pos-rel", "Relegation")],
+    }.get(lid, [("pos-ucl", "Champions League"), ("pos-rel", "Relegation")])
+    dots = "".join(f'<span class="zone-item"><i class="zone-dot {c}"></i>{label}</span>' for c, label in items)
+    return f'<div class="zone-legend">{dots}</div>'
+
+def next_kickoff():
+    """Earliest upcoming fixture (date, then time) — never invented."""
+    if not UPCOMING:
+        return None
+    s = sorted(UPCOMING, key=lambda m: (m.get("date", ""), m.get("time") or "99:99"))
+    return s[0] if s else None
+
+def live_row_html(m):
+    """One live match row: pulsing LIVE badge + minute + live score."""
+    minute = (str(m.get("minute") or "")).strip()
+    score = f'{m.get("home_goals", 0)} - {m.get("away_goals", 0)}'
+    return (f'<a class="match-link" href="match.html?id={m["id"]}"><div class="match-row live-row">'
+            f'<span class="lg">{m["league_name"]}<span class="status-badge live">● LIVE {minute}&prime;</span></span>'
+            f'<span class="live-minute"><span class="live-dot"></span>{minute}&prime;</span>'
+            f'<span class="team">{logo_img(m["home"])}{m["home"]}</span>'
+            f'<span class="score live">{score}</span>'
+            f'<span class="team away">{logo_img(m["away"])}{m["away"]}</span>'
+            f'</div></a>')
+
+def live_section_html():
+    """Homepage 'Live Now' section — real live matches only; honest empty
+    state (next kickoff) when nothing is live. Never fakes a live score."""
+    live = FX_LIVE or []
+    if live:
+        rows = "".join(live_row_html(m) for m in live)
+        return (f'<section class="section live-section" id="live">'
+                f'<div class="section-head"><h2><span class="live-dot"></span>Live now</h2>'
+                f'<a class="more" href="live.html">{len(live)} live &rarr;</a></div>'
+                f'<div class="match-list">{rows}</div></section>')
+    nxt = next_kickoff()
+    nxt_html = ""
+    if nxt:
+        nxt_html = (f'<p class="live-next">Next kickoff: <b>{nxt["home"]} vs {nxt["away"]}</b>'
+                    f' — {en_date(nxt["date"])} &middot; {nxt.get("time") or "TBC"} UTC</p>')
+    return (f'<section class="section live-section" id="live">'
+            f'<div class="section-head"><h2><span class="live-dot live-dot-idle"></span>Live now</h2>'
+            f'<a class="more" href="live.html">Live scores &rarr;</a></div>'
+            f'<div class="live-empty"><p><b>No live matches right now.</b></p>{nxt_html}'
+            f'<a class="btn" href="matches.html">See upcoming fixtures &rarr;</a></div></section>')
+
+def live_page_html():
+    """Dedicated live-scores page (live.html)."""
+    live = FX_LIVE or []
+    if live:
+        rows = "".join(live_row_html(m) for m in live)
+        body = (f'<p class="data-note"><b>{len(live)} match(es) in progress</b> — scores from ESPN, '
+                f'updated with each daily data refresh. Last updated: {BUILD_DATE_EN}.</p>'
+                f'<div class="match-list">{rows}</div>')
+        sub = f"{len(live)} live"
+    else:
+        nxt = next_kickoff()
+        nxt_html = ""
+        if nxt:
+            nxt_html = (f'<p class="live-next">Next kickoff: <b>{nxt["home"]} vs {nxt["away"]}</b>'
+                        f' — {en_date(nxt["date"])} &middot; {nxt.get("time") or "TBC"} UTC</p>')
+        up5 = fixtures_list_html(UPCOMING[:5]) if UPCOMING else ""
+        body = (f'<div class="live-empty"><p><b>No live matches right now.</b></p>{nxt_html}</div>'
+                f'<div class="section-head" style="margin-top:22px"><h2>Next kickoffs</h2>'
+                f'<a class="more" href="matches.html">All fixtures &rarr;</a></div>{up5}')
+        sub = "No live matches"
+    tpl = """<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live scores | MatchPulse</title>
+<meta name="description" content="Live football scores from Europe's five major leagues and Botola Pro — in progress now. All times UTC.">
+<link rel="canonical" href="{BASE}/live.html">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+{header}
+{CHIPS}
+{TICKER}
+<main class="container">
+  <section class="section">
+    <div class="section-head"><h2>Live scores</h2><span style="color:var(--muted);font-size:.82rem">{sub}</span></div>
+    {body}
+  </section>
+</main>
+{footer}
+<script src="assets/js/data-fallback.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>"""
+    return tpl.format(BASE=BASE, header=header("live.html"), footer=footer(), body=body, sub=sub, CHIPS=CHIPS, TICKER=TICKER)
 '''
 
 CSS_ADD_EN = '''
 /* ---------- MatchPulse: additions ---------- */
+/* PRO INTERNATIONAL design system (19 Nov 2026) — references: Flashscore,
+   Sofascore, BBC Sport, ESPN. Light livescore system: light grey page,
+   white cards, dark navy header, ONE royal-blue accent. This block is the
+   single source of truth — build-en.py main() strips the old block and
+   re-appends this one on every build. The dark base above is kept only as
+   fallback; everything below overrides it. */
 /* Hide empty ad slots (teardown fixes 18 Nov 2026) — the live CPA offers
    section (.offers-*) is NOT hidden. */
 .ad-slot, .anchored-ad, .ad-leaderboard, .ad-infeed, .ad-rect { display: none !important; }
-/* MatchPulse font (LTR) */
-:root { --font: "Inter","Segoe UI",system-ui,-apple-system,sans-serif; }
-body { font-family: var(--font); }
-.data-note { border-left: 3px solid var(--accent); border-right: none; }
-/* League logo next to the league name in section titles */
-.league-chip img, .league-chip svg { width: 18px; height: 18px; object-fit: contain; vertical-align: -3px; margin-inline-end: 6px; }
-/* Status badges */
-.status-badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
-.status-live { background: #e11d48; color: #fff; }
-.status-ft { background: #16a34a; color: #fff; }
-.status-tbc { background: #f59e0b; color: #111; }
-/* Match page tabs */
+
+/* ---------- tokens ---------- */
+:root {
+  --bg: #eef1f5; --bg-soft: #e6ebf1; --card: #ffffff; --card-2: #f8fafc;
+  --border: #dbe2ec; --line: #dbe2ec;
+  --text: #0f172a; --muted: #64748b; --muted-2: #94a3b8;
+  --accent: #1d4ed8; --accent-dark: #1e40af; --accent-soft: #dbeafe;
+  --navy: #0b1530; --gold: #b45309; --red: #e11d48; --red-dark: #be123c;
+  --green: #16a34a; --blue: #2563eb;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(15,23,42,.06), 0 1px 3px rgba(15,23,42,.05);
+  --shadow-lg: 0 8px 24px rgba(15,23,42,.10);
+  --font: "Inter","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.55; }
+body::before { display: none; }
+.container { width: min(1200px, 94%); }
+
+/* ---------- header ---------- */
+.site-header { background: var(--navy); border-bottom: none; box-shadow: 0 1px 0 rgba(0,0,0,.2); }
+.header-inner { padding: 10px 0; }
+.logo { color: #fff; font-size: 1.35rem; letter-spacing: -.01em; }
+.logo .ball {
+  width: 38px; height: 38px; border: none;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.14); font-size: 1.1rem;
+}
+.logo small { color: #94a3b8; font-size: .62rem; letter-spacing: 2px; }
+.main-nav a { color: #cbd5e1; font-size: .92rem; padding: 8px 13px; border-radius: 8px; }
+.main-nav a:hover { color: #fff; background: rgba(255,255,255,.09); }
+.main-nav a.active { color: #fff; background: var(--accent); }
+.menu-btn { background: transparent; border: 1px solid rgba(255,255,255,.25); color: #fff; }
+.live-nav { display: inline-flex; align-items: center; gap: 6px; }
+.live-count { background: var(--red); color: #fff; font-size: 11px; font-weight: 800; border-radius: 999px; padding: 1px 7px; line-height: 1.5; }
+
+/* ---------- league chips ---------- */
+.league-chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0 2px; scrollbar-width: none; }
+.league-chips::-webkit-scrollbar { display: none; }
+.league-chips a {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
+  background: #fff; border: 1px solid var(--border); border-radius: 999px;
+  padding: 7px 14px; font-size: .86rem; font-weight: 600; color: var(--text); white-space: nowrap;
+}
+.league-chips a:hover { border-color: var(--accent); color: var(--accent); }
+.league-chips img, .league-chips svg { width: 18px; height: 18px; object-fit: contain; }
+
+/* ---------- ticker ---------- */
+.ticker-wrap { background: #fff; border-bottom: 1px solid var(--border); }
+.ticker-label { background: var(--red); }
+.ticker-item { color: var(--muted); }
+.ticker-item b { color: var(--text); }
+
+/* ---------- hero ---------- */
+.hero { padding: 18px 0 4px; }
+.hero-card {
+  background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow);
+  min-height: 0; border-radius: 12px;
+}
+.hero-card::before { display: none; }
+.hero-content { padding: 26px 28px; max-width: 720px; }
+.tag {
+  background: var(--accent-soft); color: var(--accent-dark);
+  font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 999px; margin-bottom: 12px;
+}
+.tag.gold { background: #fef3c7; color: #92400e; }
+.hero-content h1 { font-size: clamp(1.35rem, 3vw, 1.7rem); line-height: 1.3; letter-spacing: -.015em; color: var(--text); margin-bottom: 8px; }
+.hero-content p { color: var(--muted); font-size: .95rem; margin-bottom: 16px; }
+.btn {
+  background: var(--accent); color: #fff; font-weight: 700; font-size: .92rem;
+  padding: 11px 22px; border-radius: 8px; box-shadow: none;
+}
+.btn:hover { transform: none; background: var(--accent-dark); box-shadow: 0 4px 14px rgba(29,78,216,.3); }
+.btn.ghost { background: #fff; color: var(--text); border: 1px solid var(--border); box-shadow: none; }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); box-shadow: none; }
+
+/* ---------- date strip ---------- */
+.date-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0 2px; }
+.date-strip .day {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  box-shadow: var(--shadow); min-width: 0; flex-wrap: wrap;
+}
+.date-strip .day b { font-size: .9rem; font-weight: 700; color: var(--text); min-width: 0; }
+.date-strip .day span { font-size: 1.25rem; font-weight: 800; color: var(--accent); }
+.date-strip .day.next span { color: var(--text); }
+
+/* ---------- sections ---------- */
+.section { padding: 22px 0; }
+.section-head { margin-bottom: 14px; }
+.section-head h2 { font-size: 1.06rem; font-weight: 800; letter-spacing: .01em; color: var(--text); display: block; min-width: 0; }
+.section-head h2::before { width: 4px; height: 20px; background: var(--accent); border-radius: 2px; display: inline-block; vertical-align: -3px; margin-right: 8px; }
+.section-head a.more { color: var(--accent); font-weight: 700; font-size: .88rem; }
+
+/* ---------- news cards ---------- */
+.news-grid { gap: 16px; }
+.news-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); }
+.news-card:hover { transform: translateY(-2px); border-color: #c7d2fe; box-shadow: var(--shadow-lg); }
+.news-thumb { height: 140px; font-size: 2.4rem; background: linear-gradient(135deg, #dbeafe, #eff6ff); }
+.news-body { padding: 14px 16px; }
+.news-meta .cat { color: var(--accent); font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; }
+.news-card h3 { font-size: .98rem; line-height: 1.45; color: var(--text); }
+.news-card p { color: var(--muted); font-size: .86rem; }
+
+/* ---------- match rows (Flashscore-style) ---------- */
+.match-list { gap: 8px; }
+.match-link { display: block; }
+.match-row {
+  display: grid; grid-template-columns: 78px 1fr auto 1fr; align-items: center; gap: 10px;
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; box-shadow: var(--shadow);
+}
+.match-link:hover .match-row, a:hover > .match-row { border-color: #93c5fd; }
+.match-row .lg {
+  grid-column: 1 / -1; font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--muted-2);
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.match-row .team { font-weight: 600; font-size: .92rem; color: var(--text); min-width: 0; }
+.match-row .team:not(.away) { text-align: right; }
+.match-row .team.away { text-align: left; }
+.match-row .team img { width: 20px; height: 20px; object-fit: contain; vertical-align: -4px; }
+.match-row .team:not(.away) img { margin-inline-start: 7px; margin-inline-end: 0; }
+.match-row .team.away img { margin-inline-end: 7px; }
+.match-row .score {
+  background: #f1f5f9; border: none; border-radius: 6px; color: var(--text);
+  padding: 3px 11px; font-weight: 800; font-size: .95rem; min-width: 66px; text-align: center;
+}
+.match-row .score.live { background: #fff1f2; color: var(--red-dark); border: 1px solid #fecdd3; }
+.match-row .time { font-size: .78rem; color: var(--muted); white-space: nowrap; line-height: 1.35; }
+.match-row .time.live-min { color: var(--red); font-weight: 800; font-size: .85rem; }
+
+/* status badges */
+.status-badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: .02em; }
+.status-badge.live, .status-live { background: var(--red); color: #fff; }
+.status-badge.live { animation: livepulse 1.6s infinite; }
+.status-badge.finished, .status-ft { background: #e2e8f0; color: #475569; }
+.status-badge.upcoming, .status-tbc { background: #fef3c7; color: #92400e; }
+@keyframes livepulse { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
+
+/* ---------- live section ---------- */
+.live-section { margin-top: 18px; }
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--red); margin-inline-end: 7px; animation: livepulse 1.4s infinite; }
+.live-dot-idle { background: #cbd5e1; animation: none; }
+.live-minute { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; color: var(--red); font-size: .85rem; white-space: nowrap; }
+.live-empty {
+  background: #fff; border: 1px dashed #cbd5e1; border-radius: 12px;
+  padding: 22px 20px; text-align: center; color: var(--muted);
+}
+.live-empty p { margin-bottom: 6px; }
+.live-empty p b { color: var(--text); }
+.live-next { font-size: .92rem; }
+.live-empty .btn { margin-top: 12px; }
+.live-count { background: var(--red); color: #fff; font-size: 11px; font-weight: 800; border-radius: 999px; padding: 1px 7px; }
+
+/* ---------- tabs ---------- */
+.tabs button {
+  background: #fff; border: 1px solid var(--border); color: #475569;
+  padding: 8px 18px; font-size: .88rem;
+}
+.tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.league-select button { background: #fff; border: 1px solid var(--border); color: var(--text); }
+.league-select button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* ---------- tables ---------- */
+.table-wrap { background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); overflow-x: auto; }
+table.standings { font-size: .88rem; min-width: 560px; }
+table.standings th {
+  background: #f8fafc; color: var(--muted); font-size: .7rem; letter-spacing: .05em;
+  text-transform: uppercase; padding: 11px 8px; border-bottom: 1px solid var(--border);
+}
+table.standings td { padding: 0 8px; height: 44px; border-top: 1px solid #eef2f7; color: var(--text); }
+table.standings td.team { text-align: left; font-weight: 600; font-size: .92rem; white-space: nowrap; }
+table.standings td b { font-size: .95rem; }
+table.standings tr:hover td { background: #f8fafc; }
+
+/* ---------- logo sizing (never intrinsic size outside match rows) ---------- */
+.standings td.team img { width: 22px; height: 22px; object-fit: contain; vertical-align: -4px; margin-right: 7px; }
+.league-select button img { width: 22px; height: 22px; object-fit: contain; vertical-align: -5px; margin-right: 7px; }
+#league-title img { width: 30px; height: 30px; object-fit: contain; display: inline-block; vertical-align: -7px; margin-right: 8px; }
+.scorer .info img { width: 20px; height: 20px; object-fit: contain; vertical-align: -4px; margin-right: 5px; }
+/* ---------- match page: scoreboard, info, tabs (base had no rules) ---------- */
+.scoreboard { background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); padding: 26px 20px 18px; text-align: center; margin-bottom: 16px; }
+.scoreboard .teams { display: flex; align-items: center; justify-content: center; gap: 20px; }
+.scoreboard .team-name { display: flex; flex-direction: column; align-items: center; gap: 10px; font-weight: 800; font-size: 1.05rem; width: 220px; }
+.scoreboard .team-name img { width: 64px; height: 64px; object-fit: contain; }
+.scoreboard .big-score { font-size: 1.9rem; font-weight: 900; background: #f1f5f9; border-radius: 10px; padding: 8px 18px; white-space: nowrap; }
+.scoreboard .status { color: var(--muted); font-size: .9rem; margin-top: 14px; }
+.match-info { display: flex; flex-wrap: wrap; gap: 8px 26px; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; font-size: .92rem; }
+.match-info .lbl { color: var(--muted); margin-right: 5px; }
+.match-tabs button { padding: 8px 16px; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: #475569; cursor: pointer; font-weight: 700; font-size: .88rem; font-family: inherit; }
+.match-tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+table.standings tr.pos-ucl td:first-child { border-left: 3px solid var(--blue); }
+table.standings tr.pos-rel td:first-child { border-left: 3px solid var(--red); }
+table.standings tr.pos-playoff td:first-child { border-left: 3px solid #d97706; }
+.zone-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: .8rem; color: var(--muted); }
+.zone-item { display: inline-flex; align-items: center; gap: 6px; }
+.zone-dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.zone-dot.pos-ucl { background: var(--blue); }
+.zone-dot.pos-rel { background: var(--red); }
+.zone-dot.pos-playoff { background: #d97706; }
+
+/* ---------- scorers ---------- */
+.scorer { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.scorer .rank { background: #eff6ff; border: none; color: var(--accent); }
+.scorer .info b { color: var(--text); }
+.scorer .info span { color: var(--muted); }
+.scorer .goals { color: var(--accent); }
+
+/* ---------- notes / misc ---------- */
+.data-note {
+  background: #eff6ff; border: 1px solid #dbeafe; border-left: 3px solid var(--accent);
+  border-radius: 8px; padding: 10px 14px; font-size: .84rem; color: #334155;
+}
+.verified-tag { display: inline-block; background: #dcfce7; color: #166534; font-size: 11px; font-weight: 800; border-radius: 999px; padding: 2px 9px; }
+.placeholder-box { background: #fff; border: 1px dashed #cbd5e1; border-radius: var(--radius); padding: 20px; color: var(--muted); text-align: center; }
+
+/* ---------- newsletter / forms ---------- */
+.newsletter { background: var(--navy); border: none; }
+.newsletter h2 { color: #fff; }
+.newsletter p { color: #cbd5e1; }
+.newsletter input { background: #fff; border: 1px solid #cbd5e1; color: var(--text); }
+.newsletter input:focus { border-color: var(--accent); }
+.form-note { color: #93c5fd; }
+.contact-form input, .contact-form textarea, .contact-form select {
+  background: #fff; border: 1px solid #cbd5e1; color: var(--text);
+}
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(29,78,216,.15); }
+.contact-form label { color: var(--text); }
+
+/* ---------- articles / pages ---------- */
+.article-hero { background: linear-gradient(135deg, #dbeafe, #eff6ff); border: 1px solid var(--border); }
+.article-body { color: #334155; }
+.article-body h2 { color: var(--text); }
+.article-body blockquote { background: #f8fafc; border-left: 4px solid var(--accent); color: var(--text); }
+.page h1 { font-size: 1.55rem; color: var(--text); }
+.page h2 { color: var(--text); }
+.page p, .page li { color: #334155; }
+
+/* ---------- footer ---------- */
+.site-footer { background: var(--navy); border-top: none; margin-top: 40px; padding: 36px 0 28px; }
+.footer-grid h4 { color: #fff; }
+.footer-grid a { color: #94a3b8; }
+.footer-grid a:hover { color: #fff; }
+.footer-grid p { color: #94a3b8; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); color: #7d8aa5; }
+
+/* ---------- match page ---------- */
 .match-tabs { display: flex; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
-.match-tab { padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); cursor: pointer; font-weight: 700; }
+.match-tab { padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: #475569; cursor: pointer; font-weight: 700; font-size: .88rem; }
 .match-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-/* Stat bars */
 .stat-row { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 10px; margin: 10px 0; }
-.stat-bar { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; position: relative; }
+.stat-bar { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; position: relative; }
 .stat-bar i { position: absolute; top: 0; bottom: 0; }
 .stat-bar i.home { left: 0; background: var(--accent); }
-.stat-bar i.away { right: 0; background: #64748b; }
-/* Table team cell wraps instead of horizontal scrolling on phones (390px) */
-.standings-table td.team-cell { white-space: normal; }
-.standings-table td.team-cell img { width: 20px; height: 20px; object-fit: contain; vertical-align: -4px; margin-inline-end: 6px; }
-/* Sponsored ads (live CPA offers) — display-ad look, NOT content cards */
+.stat-bar i.away { right: 0; background: #94a3b8; }
+
+/* ---------- sponsored ads (light theme — same units, same links) ---------- */
 .offers-section { margin: 28px 0; }
-.offers-section h2 { font-size: 1.25rem; }
-.ad-label { font-size: 11px; color: #64748b; border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; vertical-align: middle; }
+.offers-section h2 { font-size: 1.06rem; font-weight: 800; color: var(--text); }
+.ad-label { font-size: 11px; color: #64748b; border: 1px solid #cbd5e1; border-radius: 6px; padding: 1px 6px; vertical-align: middle; background: #fff; }
 .offers-note { color: #64748b; font-size: 13px; }
-.ad-kicker { text-align: center; font-size: 11px; letter-spacing: 3px; color: #64748b; text-transform: uppercase; margin: 0 0 8px; }
-.ad-tag { display: inline-block; align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--ad, #22e07a); border: 1px solid var(--ad, #22e07a); border-radius: 999px; padding: 2px 8px; margin-bottom: 6px; }
-/* --- the ad unit: horizontal display ad --- */
-.ad-unit, .ad-leaderboard-unit { position: relative; display: flex; gap: 16px; align-items: center; padding: 18px; border-radius: 14px; background: linear-gradient(135deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); text-decoration: none; color: inherit; overflow: hidden; }
-.ad-unit:hover, .ad-leaderboard-unit:hover, .ad-mini:hover { border-color: var(--ad, #22e07a); }
+.ad-kicker { text-align: center; font-size: 11px; letter-spacing: 3px; color: #94a3b8; text-transform: uppercase; margin: 0 0 8px; }
+.ad-tag { display: inline-block; align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--ad, #1d4ed8); border: 1px solid var(--ad, #1d4ed8); border-radius: 999px; padding: 2px 8px; margin-bottom: 6px; background: #fff; }
+.ad-unit, .ad-leaderboard-unit {
+  position: relative; display: flex; gap: 16px; align-items: center; padding: 18px;
+  border-radius: 12px; background: #fff; border: 1px solid var(--border);
+  border-top: 3px solid var(--ad, #1d4ed8); box-shadow: var(--shadow);
+  text-decoration: none; color: inherit; overflow: hidden;
+}
+.ad-unit:hover, .ad-leaderboard-unit:hover, .ad-mini:hover { border-color: var(--ad, #1d4ed8); box-shadow: var(--shadow-lg); }
 .ad-sponsored { position: absolute; top: 0; right: 0; background: #f59e0b; color: #111; font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 0 0 0 8px; }
-.ad-visual { flex: 0 0 56px; width: 56px; height: 56px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; background: var(--ad, #22e07a); }
+.ad-visual { flex: 0 0 56px; width: 56px; height: 56px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; background: var(--ad, #1d4ed8); }
 .ad-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-.ad-headline { font-weight: 800; font-size: 1.05rem; line-height: 1.25; }
-.ad-benefit { font-size: .9rem; color: #c6d0e8; margin-top: 3px; }
-.ad-meta { font-size: 12px; color: #8b98b8; margin-top: 5px; }
-.ad-cta { flex: 0 0 auto; background: var(--ad, #22e07a); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .85rem; padding: 12px 18px; border-radius: 999px; white-space: nowrap; text-align: center; }
+.ad-headline { font-weight: 800; font-size: 1.05rem; line-height: 1.25; color: var(--text); }
+.ad-benefit { font-size: .9rem; color: #475569; margin-top: 3px; }
+.ad-meta { font-size: 12px; color: #64748b; margin-top: 5px; }
+.ad-cta { flex: 0 0 auto; background: var(--ad, #1d4ed8); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .85rem; padding: 12px 18px; border-radius: 999px; white-space: nowrap; text-align: center; }
 .ad-stack { display: grid; gap: 12px; }
 @media (min-width: 700px) { .ad-stack { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .ad-unit { flex-wrap: wrap; } .ad-unit .ad-cta { width: 100%; } }
-/* --- leaderboard banner (homepage): wide horizontal ad --- */
 .ad-leaderboard-wrap { margin: 28px 0; }
-.ad-leaderboard-unit { padding: 22px; border-radius: 16px; }
+.ad-leaderboard-unit { padding: 22px; border-radius: 12px; }
 .ad-leaderboard-unit .ad-visual { flex-basis: 72px; width: 72px; height: 72px; font-size: 36px; border-radius: 16px; }
 .ad-leaderboard-unit .ad-headline { font-size: 1.35rem; }
 .ad-leaderboard-unit .ad-cta { padding: 14px 26px; font-size: 1rem; }
 .ad-grid { display: grid; gap: 12px; margin-top: 12px; }
 @media (min-width: 700px) { .ad-grid { grid-template-columns: repeat(3, 1fr); } }
-/* --- vertical mini ad card (300x250 style) --- */
-.ad-mini { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 18px 16px 16px; border-radius: 14px; background: linear-gradient(160deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); text-decoration: none; color: inherit; overflow: hidden; }
+.ad-mini { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 18px 16px 16px; border-radius: 12px; background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--ad, #1d4ed8); box-shadow: var(--shadow); text-decoration: none; color: inherit; overflow: hidden; }
 .ad-mini .ad-visual { width: 52px; height: 52px; font-size: 26px; margin-top: 4px; }
 .ad-mini .ad-cta { margin-top: 8px; }
-/* --- showcase rows (offers.html): large ad units --- */
-.ad-showcase { position: relative; display: flex; gap: 18px; padding: 22px 20px; border-radius: 16px; background: linear-gradient(135deg, #1b2342, #141b30); border: 1px solid #2b3656; border-top: 3px solid var(--ad, #22e07a); box-shadow: 0 8px 22px rgba(0,0,0,.35); margin: 16px 0; overflow: hidden; }
+.ad-mini .ad-headline { color: var(--text); }
+.ad-mini .ad-benefit { color: #475569; }
+.ad-showcase { position: relative; display: flex; gap: 18px; padding: 22px 20px; border-radius: 12px; background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--ad, #1d4ed8); box-shadow: var(--shadow); margin: 16px 0; overflow: hidden; }
 .ad-showcase .ad-visual { flex: 0 0 88px; width: 88px; height: 88px; font-size: 44px; border-radius: 16px; }
-.ad-showcase .ad-headline { font-size: 1.3rem; margin: 2px 0 0; }
-.ad-showcase .ad-benefit { font-size: .95rem; }
-.ad-facts { font-size: .85rem; color: #c6d0e8; margin: 8px 0 0; }
-.ad-cta-btn { display: inline-block; margin-top: 14px; background: var(--ad, #22e07a); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .95rem; padding: 13px 24px; border-radius: 999px; text-decoration: none; }
+.ad-showcase .ad-headline { font-size: 1.3rem; margin: 2px 0 0; color: var(--text); }
+.ad-showcase .ad-benefit { font-size: .95rem; color: #475569; }
+.ad-facts { font-size: .85rem; color: #475569; margin: 8px 0 0; }
+.ad-cta-btn { display: inline-block; margin-top: 14px; background: var(--ad, #1d4ed8); color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; font-size: .95rem; padding: 13px 24px; border-radius: 999px; text-decoration: none; }
 .ad-cta-btn:hover { filter: brightness(1.12); }
 @media (max-width: 640px) { .ad-showcase, .ad-leaderboard-unit { flex-wrap: wrap; } .ad-leaderboard-unit .ad-cta, .ad-cta-btn { width: 100%; text-align: center; } }
-.offers-teaser { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 14px 0; background: var(--card); font-weight: 700; }
-.offers-teaser a { text-decoration: none; color: inherit; }
+.offers-teaser { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin: 14px 0; background: #fff; font-weight: 700; box-shadow: var(--shadow); }
+.offers-teaser a { text-decoration: none; color: var(--text); }
+/* Mobidea Smartlink slot — same ad system, same Sponsored badge + #ad.
+   Rendered ONLY when data/offers.json mobidea_smartlink.enabled=true AND a
+   verified url is set. Default: hidden. */
+.ad-smartlink .ad-visual { background: #f97316; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .article-layout { grid-template-columns: 1fr; }
+  .ad-rect { position: static; min-height: 120px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 760px) {
+  .main-nav { display: none; position: absolute; top: 100%; right: 0; left: 0; background: var(--navy); border-bottom: 1px solid rgba(255,255,255,.12); }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; padding: 10px; }
+  .menu-btn { display: block; margin-inline-start: auto; }
+  .newsletter form { flex-direction: column; }
+  .hero-content { padding: 20px; }
+  .date-strip { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .date-strip .day { padding: 10px 12px; }
+  .date-strip .day b { font-size: .8rem; }
+  .date-strip .day span { font-size: 1.05rem; }
+}
+@media (max-width: 640px) {
+  .match-row { grid-template-columns: 58px 1fr auto 1fr; padding: 9px 10px; gap: 7px; }
+  .match-row .team { font-size: .8rem; }
+  .match-row .score { min-width: 44px; padding: 3px 8px; font-size: .88rem; }
+  .match-row .team img { width: 18px; height: 18px; }
+  .match-row .score { min-width: 56px; padding: 3px 8px; font-size: .9rem; }
+  .hero-content h1 { font-size: 1.3rem; }
+  .section { padding: 18px 0; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
 '''
 
 # --------------------------------------------------------- structural ------
@@ -841,6 +1278,108 @@ def structural(src):
     rep('<div class="cpa-slot" style="position:static"><b>Sponsored offers</b>Trusted offers will be added here after selection.<small>No live offers right now.</small></div>',
         '<div class="offers-teaser"><a href="../offers.html">🎁 Free offers &amp; rewards <span class="ad-label">#ad</span> — see the 4 live offers &rarr;</a></div>',
         required=False)
+    # --- PRO redesign (19 Nov 2026): fonts, CSS refresh, Live nav, zones,
+    #     match-row time-first, live section + live.html, sitemap ---------
+    rep('family=Inter:wght@400;500;700;800', 'family=Inter:wght@400;500;600;700;800;900')
+    # --- CSS in main(): refresh the MatchPulse additions block each build ---
+    rep('    _ar_marker = "/* ---------- الملعب V2"\n'
+        '    if _ar_marker in s:\n'
+        '        s = s[:s.index(_ar_marker)].rstrip() + "\\n"\n'
+        '    if "MatchPulse" not in s:\n'
+        '        w(css, s + CSS_ADD)',
+        '    _ar_marker = "/* ---------- الملعب V2"\n'
+        '    if _ar_marker in s:\n'
+        '        s = s[:s.index(_ar_marker)].rstrip() + "\\n"\n'
+        '    _mp_marker = "/* ---------- MatchPulse: additions"\n'
+        '    if _mp_marker in s:\n'
+        '        s = s[:s.index(_mp_marker)].rstrip() + "\\n"\n'
+        '    w(css, s + CSS_ADD)')
+    # --- header: Live nav item (with red count badge while matches are live) ---
+    rep('{a("index.html", "Home")}', '{a("index.html", "Home")}{live_nav_item(active)}')
+    # --- table zones (server-side tables, league pages) ---
+    rep('        cls = "pos-ucl" if r["pos"] <= 4 else ("pos-rel" if (league["id"] == "botola" and r["pos"] >= 15) or (league["id"] != "botola" and r["pos"] >= 18) else "")',
+        '        cls = zone_class(league["id"], r["pos"], len(league["table"]))')
+    rep('''f'<tbody>{"".join(out)}</tbody></table></div>')''',
+        '''f'<tbody>{"".join(out)}</tbody></table></div>' + zone_legend(league["id"]))''')
+    # --- table zones (JS tables: standings page + homepage minis) ---
+    rep('''  window.posClass = function (pos, leagueId) {
+    if (pos <= 4) return "pos-ucl";
+    if (leagueId === "botola") return pos >= 15 ? "pos-rel" : "";
+    if (pos >= 18) return "pos-rel";
+    return "";
+  };''',
+        '''  window.posClass = function (pos, leagueId, n) {
+    if (leagueId === "ligue-1") {
+      if (pos <= 3) return "pos-ucl";
+      if (pos === 4 || pos === 16) return "pos-playoff";
+      if (pos >= 17) return "pos-rel";
+      return "";
+    }
+    if (leagueId === "botola") {
+      if (pos <= 2) return "pos-ucl";
+      if (pos === 3) return "pos-playoff";
+      if (pos >= 15) return "pos-rel";
+      return "";
+    }
+    if (pos <= 4) return "pos-ucl";
+    if (pos >= (n || 20) - 2) return "pos-rel";
+    return "";
+  };''')
+    rep('window.posClass(r.pos, league.id)', 'window.posClass(r.pos, league.id, league.table.length)')
+    # --- match rows: time first (Flashscore-style) + live minute in red ---
+    rep('''    const time = isLive
+      ? `<span class="time">${m.minute || ""}'</span>`
+      : `<span class="time">${m.date_label || m.date || ""} ${m.time || ""}</span>`;''',
+        '''    const shortDate = iso => iso ? new Date(iso + "T12:00:00").toLocaleDateString("en-GB", {day: "numeric", month: "short"}) : "";
+    const time = isLive
+      ? `<span class="time live-min">${m.minute || ""}'</span>`
+      : isFin
+        ? `<span class="time">${shortDate(m.date)}</span>`
+        : `<span class="time">${shortDate(m.date)}<br>${m.time || "TBC"}</span>`;''')
+    rep('''    const score = isLive || isFin
+      ? `<span class="score${isLive ? " live" : ""}">${m.home_goals} - ${m.away_goals}</span>`
+      : `<span class="score">${m.time || "—"}</span>`;''',
+        '''    const score = isLive || isFin
+      ? `<span class="score${isLive ? " live" : ""}">${m.home_goals} - ${m.away_goals}</span>`
+      : `<span class="score">–</span>`;''')
+    rep('''    const inner = `<div class="match-row">
+      <span class="lg">${m.league_name || ""}${badge}</span>
+      <span class="team">${window.logoFor(m.home)}${m.home}</span>${score}<span class="team away">${window.logoFor(m.away)}${m.away}</span>${time}
+    </div>`;''',
+        '''    const inner = `<div class="match-row">
+      <span class="lg">${m.league_name || ""}${badge}</span>
+      ${time}<span class="team">${window.logoFor(m.home)}${m.home}</span>${score}<span class="team away">${window.logoFor(m.away)}${m.away}</span>
+    </div>`;''')
+    rep('''        score = f'{m["home_goals"]} - {m["away_goals"]}' if m["status"] == "finished" else (m.get("time") or "—")
+        when = f'{m.get("date_label") or m["date"]} {m.get("time") or ""}'.strip()
+        if m.get("time") is None:
+            when += " — Kick-off time TBC"
+        inner = (f'<div class="match-row"><span class="lg">{m["league_name"]}</span>'
+                 f'<span class="team">{logo_img(m["home"])}{m["home"]}</span><span class="score">{score}</span>'
+                 f'<span class="team away">{logo_img(m["away"])}{m["away"]}</span><span class="time">{when}</span></div>')''',
+        '''        score = f'{m["home_goals"]} - {m["away_goals"]}' if m["status"] == "finished" else "–"
+        ds = f'{int(m["date"][8:10])} {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][int(m["date"][5:7]) - 1]}'
+        when = f'{ds}<br>{m.get("time") or "TBC"}' if m["status"] != "finished" else ds
+        inner = (f'<div class="match-row"><span class="lg">{m["league_name"]}</span>'
+                 f'<span class="time">{when}</span>'
+                 f'<span class="team">{logo_img(m["home"])}{m["home"]}</span><span class="score">{score}</span>'
+                 f'<span class="team away">{logo_img(m["away"])}{m["away"]}</span></div>')''')
+    # --- homepage: Live Now section above the hero ---
+    rep('<main class="container">\n{HERO}', '<main class="container">\n{live_section_html()}\n{HERO}')
+    # --- live.html page (after offers.html generation) ---
+    rep('''    # ---- offers.html (live CPA offers) ----
+    w(os.path.join(ROOT, "offers.html"),
+        offers_page_html().format(BASE=BASE, header=header("offers.html"), footer=footer()))''',
+        '''    # ---- offers.html (live CPA offers) ----
+    w(os.path.join(ROOT, "offers.html"),
+        offers_page_html().format(BASE=BASE, header=header("offers.html"), footer=footer()))
+    # ---- live.html (live scores) ----
+    w(os.path.join(ROOT, "live.html"), live_page_html())''')
+    # --- sitemap + refresh_dates: add live.html ---
+    # (The "...privacy.html"] + \ pattern appears in both lists, and rep()
+    #  replaces all occurrences — so this one rep covers sitemap AND dates.)
+    rep('"about.html", "contact.html", "privacy.html", "offers.html"] + \\',
+        '"about.html", "contact.html", "privacy.html", "offers.html", "live.html"] + \\')
     # --- render.yaml / leftovers ---
     src = src.replace('almalaeb', 'matchpulse')
     # --- build print ---

@@ -43,6 +43,29 @@ as-is — it is a link to the offers page, not an ad unit.
 
 `#ad` disclosure is shown on every placement.
 
+## Mobidea Smartlink — 5th ad unit (LIVE since 19 Nov 2026)
+
+- **URL (verified live, HTTP 200, supplied by the user):**
+  `https://www.avoidthecroud.help/?sl=6169509-59f14` — clean base link,
+  no traffic-source macros (the macros he pasted are for ad traffic
+  sources, not site clicks).
+- **Where the URL lives:** `data/offers.json` → top-level key
+  `mobidea_smartlink` (`enabled: true`, `url`, `label`, `blurb`, `cta`,
+  `tag`). To change the link, edit ONLY that entry and rebuild — never
+  hardcode it in the generator. If `enabled` is `false` or `url` is empty,
+  the unit renders nothing anywhere (the slot hides itself).
+- **Label:** "Recommended offers & rewards" — a general sponsored
+  recommendation. No product name and no payout are invented for it
+  (Mobidea rotates the destination; the link itself decides).
+- **Look:** same ad system as the other 4 — amber SPONSORED badge + `#ad`,
+  orange brand tile (🔗), tag chip `SMARTLINK`, headline, benefit line,
+  "Sponsored · Worldwide" meta, pill CTA "SEE OFFERS" (`rel="nofollow
+  sponsored noopener"`, opens in a new tab).
+- **Placements:** same 3 formats — Leaderboard row on `index.html` (full-
+  width unit under the 3 mini cards), Box stack on standings / news /
+  matches / league pages, Showcase row at the bottom of `offers.html`.
+  `live.html` carries no ad stack (scores page, unchanged).
+
 ## How it is built (so the daily update keeps it)
 
 - Source of truth: `tools/make-build-en.py` — `OFFERS_CODE` (ad generators:
@@ -56,15 +79,17 @@ as-is — it is a link to the offers page, not an ad unit.
   The live `assets/css/style.css` was updated with the new ad CSS in the
   same edit (the build only appends CSS once).
 
-## Local verification (19 Nov 2026, after rebuild)
+## Local verification (19 Nov 2026, after rebuild — PRO redesign + Mobidea)
 
-- 8/8 pages 200 on a local server: index, matches, standings, news, offers,
-  league-premier-league, data/fixtures-en.json, sitemap.xml.
-- Ad markup: index = 1 leaderboard + 3 mini + 4 Sponsored badges;
-  standings / news = 4 ad units + 4 Sponsored; offers = 4 showcase rows +
-  4 Sponsored; matches + league pages = 4 ad units each.
-- All 4 exact tracking links present and unchanged (6 occurrences each
-  across the checked pages); footer date still "Thursday 19 November 2026";
+- 13/13 pages 200 on a local server: index, live, matches, standings,
+  news, offers, about, contact, privacy, league-premier-league,
+  league-botola, sitemap.xml, robots.txt.
+- Ad markup: index = 1 leaderboard + 3 mini + 1 smartlink (5 ad visuals,
+  5 Sponsored badges); offers = 4 showcase rows + 1 smartlink row;
+  standings / matches / league pages = 4 CPA + 1 smartlink each.
+- All 4 exact CPA tracking links present and unchanged; Mobidea URL
+  present exactly once per page that carries ads (index, offers, matches,
+  standings, league pages); footer date still "Thursday 19 November 2026";
   data intact (56 upcoming, 48 results, tables 20/20/20/18/18/16).
 - 0 Arabic characters in served files (HTML/CSS/JS; the 3 translation
   dictionaries `logos.json` / `player-names.json` / `botola-manual.json`
@@ -72,6 +97,13 @@ as-is — it is a link to the offers page, not an ad unit.
 - Screenshots checked visually (desktop 1280px + mobile 390px): ads read as
   display ads; one real bug found and fixed — the tag chip stretched
   full-width in the flex column (added `align-self: flex-start`).
+  PRO-redesign pass fixed 3 more real bugs found on screenshots: team/
+  league logos rendering at intrinsic size in standings tables, league
+  picker, page title, scorers and match scoreboard (added logo sizing
+  rules); the match scoreboard / info bar / tabs had no CSS at all
+  (styled them); mobile horizontal overflow on index (555px) and
+  standings (393px) at 390px viewport (date-strip grid + flex H2 that
+  could not wrap) — all pages now 390px clean, no overflow.
 
 ## Not deployed
 

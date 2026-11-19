@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live scores | MatchPulse</title>
+<meta name="description" content="Live football scores from Europe's five major leagues and Botola Pro — in progress now. All times UTC.">
+<link rel="canonical" href="https://matchpulse.onrender.com/live.html">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="ball">⚽</span><span>MatchPulse<small>LIVE FOOTBALL</small></span></a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="main-nav"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="live.html" class="active live-nav">Live</a></li><li><a href="matches.html">Fixtures</a></li><li><a href="standings.html">Tables</a></li><li><a href="news.html">News</a></li><li><a href="offers.html">Offers</a></li>
+    </ul></nav>
+  </div>
+</header>
+<div class="container"><div class="league-chips">
+<a href="league-premier-league.html"><img class="league-logo" src="assets/img/logos/premier-league.png" alt="League logo" loading="lazy" onerror="this.remove()">Premier League</a>
+<a href="league-la-liga.html"><img class="league-logo" src="assets/img/logos/la-liga.png" alt="League logo" loading="lazy" onerror="this.remove()">La Liga</a>
+<a href="league-serie-a.html"><img class="league-logo" src="assets/img/logos/serie-a.png" alt="League logo" loading="lazy" onerror="this.remove()">Serie A</a>
+<a href="league-bundesliga.html"><img class="league-logo" src="assets/img/logos/bundesliga.png" alt="League logo" loading="lazy" onerror="this.remove()">Bundesliga</a>
+<a href="league-ligue-1.html"><img class="league-logo" src="assets/img/logos/ligue-1.png" alt="League logo" loading="lazy" onerror="this.remove()">Ligue 1</a>
+<a href="league-botola.html"><img class="league-logo" src="assets/img/logos/botola.png" alt="League logo" loading="lazy" onerror="this.remove()">Botola Pro</a>
+</div></div>
+<div class="ticker-wrap"><div class="container ticker">
+  <span class="ticker-label">LIVE</span>
+  <div class="ticker-track" id="ticker-track"><span class="ticker-item">No live matches right now — Loading upcoming fixtures…</span></div>
+</div></div>
+<main class="container">
+  <section class="section">
+    <div class="section-head"><h2>Live scores</h2><span style="color:var(--muted);font-size:.82rem">No live matches</span></div>
+    <div class="live-empty"><p><b>No live matches right now.</b></p><p class="live-next">Next kickoff: <b>FC Bayern Munich vs 1. FC Köln</b> — Friday 20 November 2026 &middot; 19:30 UTC</p></div><div class="section-head" style="margin-top:22px"><h2>Next kickoffs</h2><a class="more" href="matches.html">All fixtures &rarr;</a></div><div class="match-list"><a class="match-link" href="match.html?id=bayern-munich-koln-2026-11-20"><div class="match-row"><span class="lg">Bundesliga</span><span class="time">20 Nov<br>19:30</span><span class="team"><img class="team-logo" src="assets/img/logos/bayern-munich.svg" alt="Logo of FC Bayern Munich" loading="lazy" onerror="this.remove()">FC Bayern Munich</span><span class="score">–</span><span class="team away"><img class="team-logo" src="assets/img/logos/koln.svg" alt="Logo of 1. FC Köln" loading="lazy" onerror="this.remove()">1. FC Köln</span></div></a><a class="match-link" href="match.html?id=troyes-le-havre-2026-11-20"><div class="match-row"><span class="lg">Ligue 1</span><span class="time">20 Nov<br>19:45</span><span class="team"><img class="team-logo" src="assets/img/logos/troyes.svg" alt="Logo of ESTAC Troyes" loading="lazy" onerror="this.remove()">ESTAC Troyes</span><span class="score">–</span><span class="team away"><img class="team-logo" src="assets/img/logos/le-havre.svg" alt="Logo of Le Havre AC" loading="lazy" onerror="this.remove()">Le Havre AC</span></div></a><a class="match-link" href="match.html?id=athletic-bilbao-espanyol-2026-11-20"><div class="match-row"><span class="lg">La Liga</span><span class="time">20 Nov<br>20:00</span><span class="team"><img class="team-logo" src="assets/img/logos/athletic-bilbao.svg" alt="Logo of Athletic Bilbao" loading="lazy" onerror="this.remove()">Athletic Bilbao</span><span class="score">–</span><span class="team away"><img class="team-logo" src="assets/img/logos/espanyol.svg" alt="Logo of RCD Espanyol" loading="lazy" onerror="this.remove()">RCD Espanyol</span></div></a><a class="match-link" href="match.html?id=manchester-city-fulham-2026-11-21"><div class="match-row"><span class="lg">Premier League</span><span class="time">21 Nov<br>12:30</span><span class="team"><img class="team-logo" src="assets/img/logos/manchester-city.svg" alt="Logo of Manchester City" loading="lazy" onerror="this.remove()">Manchester City</span><span class="score">–</span><span class="team away"><img class="team-logo" src="assets/img/logos/fulham.svg" alt="Logo of Fulham" loading="lazy" onerror="this.remove()">Fulham</span></div></a><a class="match-link" href="match.html?id=alaves-deportivo-la-coruna-2026-11-21"><div class="match-row"><span class="lg">La Liga</span><span class="time">21 Nov<br>13:00</span><span class="team"><img class="team-logo" src="assets/img/logos/alaves.svg" alt="Logo of Deportivo Alavés" loading="lazy" onerror="this.remove()">Deportivo Alavés</span><span class="score">–</span><span class="team away"><img class="team-logo" src="assets/img/logos/deportivo-la-coruna.png" alt="Logo of Deportivo La Coruña" loading="lazy" onerror="this.remove()">Deportivo La Coruña</span></div></a></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>⚽ MatchPulse</h4>
+        <p style="color:var(--muted);font-size:.9rem">Your home for football: live results, league tables and the latest news from Europe’s five major leagues and Botola Pro.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="matches.html">Today’s matches</a></li>
+          <li><a href="standings.html">League tables</a></li>
+          <li><a href="news.html">Latest news</a></li>
+          <li><a href="offers.html">Free offers</a></li>
+          <li><a href="league-botola.html">Botola Pro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> MatchPulse — All rights reserved.</span>
+      <span>Data for information only — Last updated: Thursday 19 November 2026</span>
+    </div>
+  </div>
+</footer>
+<div class="anchored-ad"><span>Ad space for mobile</span><button class="close-ad">✕</button></div>
+<script src="assets/js/data-fallback.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
