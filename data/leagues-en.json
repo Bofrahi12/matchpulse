@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "leagues": [
     {
       "id": "premier-league",
@@ -9,7 +9,7 @@
       "season": "2026-27",
       "round": "Matchweek 10",
       "next_round": "Matchweek 11 — 21–23 November 2026",
-      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Saturday 21 November 2026 — Top scorers: ESPN",
       "table": [
         {
           "pos": 1,
@@ -312,9 +312,9 @@
       "short": "La Liga",
       "country": "Spain",
       "season": "2026-27",
-      "round": "Matchweek 12",
-      "next_round": "Matchweek 13 — 20–23 November 2026",
-      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "round": "Matchweek 13",
+      "next_round": "Matchweek 14 — 21–23 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Saturday 21 November 2026 — Top scorers: ESPN",
       "table": [
         {
           "pos": 1,
@@ -391,13 +391,13 @@
         {
           "pos": 7,
           "team": "Athletic Bilbao",
-          "p": 11,
+          "p": 12,
           "w": 4,
           "d": 4,
-          "l": 3,
+          "l": 4,
           "gf": 15,
-          "ga": 11,
-          "gd": 4,
+          "ga": 12,
+          "gd": 3,
           "pts": 16
         },
         {
@@ -426,6 +426,18 @@
         },
         {
           "pos": 10,
+          "team": "RCD Espanyol",
+          "p": 13,
+          "w": 4,
+          "d": 3,
+          "l": 6,
+          "gf": 14,
+          "ga": 14,
+          "gd": 0,
+          "pts": 15
+        },
+        {
+          "pos": 11,
           "team": "Racing Santander",
           "p": 12,
           "w": 4,
@@ -437,7 +449,7 @@
           "pts": 14
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Celta Vigo",
           "p": 12,
           "w": 2,
@@ -449,7 +461,7 @@
           "pts": 13
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Deportivo Alavés",
           "p": 12,
           "w": 3,
@@ -459,18 +471,6 @@
           "ga": 17,
           "gd": -2,
           "pts": 13
-        },
-        {
-          "pos": 13,
-          "team": "RCD Espanyol",
-          "p": 12,
-          "w": 3,
-          "d": 3,
-          "l": 6,
-          "gf": 13,
-          "ga": 14,
-          "gd": -1,
-          "pts": 12
         },
         {
           "pos": 14,
@@ -584,6 +584,11 @@
           "goals": 8
         },
         {
+          "player": "Roberto Fernández",
+          "team": "RCD Espanyol",
+          "goals": 7
+        },
+        {
           "player": "Sergio Camello",
           "team": "Rayo Vallecano",
           "goals": 7
@@ -592,11 +597,6 @@
           "player": "Fermín López",
           "team": "FC Barcelona",
           "goals": 7
-        },
-        {
-          "player": "Roberto Fernández",
-          "team": "RCD Espanyol",
-          "goals": 6
         },
         {
           "player": "Fer Niño",
@@ -609,7 +609,7 @@
           "goals": 5
         }
       ],
-      "meta": "La Liga 2026-27 table: FC Barcelona lead with 33 points, Real Madrid 30, Atlético Madrid 28 — Raphinha is the top scorer with 15 goals; Matchweek 13 — 20–23 November 2026 and results."
+      "meta": "La Liga 2026-27 table: FC Barcelona lead with 33 points, Real Madrid 30, Atlético Madrid 28 — Raphinha is the top scorer with 15 goals; Matchweek 14 — 21–23 November 2026 and results."
     },
     {
       "id": "serie-a",
@@ -619,7 +619,7 @@
       "season": "2026-27",
       "round": "Matchweek 11",
       "next_round": "Matchweek 12 — 21–23 November 2026",
-      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Saturday 21 November 2026 — Top scorers: ESPN",
       "table": [
         {
           "pos": 1,
@@ -922,21 +922,21 @@
       "short": "Bundesliga",
       "country": "Germany",
       "season": "2026-27",
-      "round": "Matchweek 9",
-      "next_round": "Matchweek 10 — 20–22 November 2026",
-      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "round": "Matchweek 10",
+      "next_round": "Matchweek 11 — 21–22 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Saturday 21 November 2026 — Top scorers: ESPN",
       "table": [
         {
           "pos": 1,
           "team": "FC Bayern Munich",
-          "p": 9,
+          "p": 10,
           "w": 6,
-          "d": 3,
+          "d": 4,
           "l": 0,
-          "gf": 29,
-          "ga": 9,
+          "gf": 30,
+          "ga": 10,
           "gd": 20,
-          "pts": 21
+          "pts": 22
         },
         {
           "pos": 2,
@@ -1084,6 +1084,18 @@
         },
         {
           "pos": 14,
+          "team": "1. FC Köln",
+          "p": 10,
+          "w": 2,
+          "d": 4,
+          "l": 4,
+          "gf": 11,
+          "ga": 15,
+          "gd": -4,
+          "pts": 10
+        },
+        {
+          "pos": 15,
           "team": "FC Augsburg",
           "p": 9,
           "w": 2,
@@ -1092,18 +1104,6 @@
           "gf": 20,
           "ga": 20,
           "gd": 0,
-          "pts": 9
-        },
-        {
-          "pos": 15,
-          "team": "1. FC Köln",
-          "p": 9,
-          "w": 2,
-          "d": 3,
-          "l": 4,
-          "gf": 10,
-          "ga": 14,
-          "gd": -4,
           "pts": 9
         },
         {
@@ -1195,7 +1195,7 @@
           "goals": 5
         }
       ],
-      "meta": "Bundesliga 2026-27 table: FC Bayern Munich lead with 21 points, Borussia Dortmund 21, SC Freiburg 19 — Niclas Füllkrug is the top scorer with 9 goals; Matchweek 10 — 20–22 November 2026 and results."
+      "meta": "Bundesliga 2026-27 table: FC Bayern Munich lead with 22 points, Borussia Dortmund 21, SC Freiburg 19 — Niclas Füllkrug is the top scorer with 9 goals; Matchweek 11 — 21–22 November 2026 and results."
     },
     {
       "id": "ligue-1",
@@ -1203,9 +1203,9 @@
       "short": "Ligue 1",
       "country": "France",
       "season": "2026-27",
-      "round": "Matchweek 10",
-      "next_round": "Matchweek 11 — 20–22 November 2026",
-      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Thursday 19 November 2026 — Top scorers: ESPN",
+      "round": "Matchweek 11",
+      "next_round": "Matchweek 12 — 21–22 November 2026",
+      "source": "ESPN (site.api.espn.com + sports.core.api.espn.com) — Saturday 21 November 2026 — Top scorers: ESPN",
       "table": [
         {
           "pos": 1,
@@ -1353,6 +1353,18 @@
         },
         {
           "pos": 13,
+          "team": "ESTAC Troyes",
+          "p": 11,
+          "w": 3,
+          "d": 2,
+          "l": 6,
+          "gf": 10,
+          "ga": 18,
+          "gd": -8,
+          "pts": 11
+        },
+        {
+          "pos": 14,
           "team": "RC Strasbourg Alsace",
           "p": 10,
           "w": 3,
@@ -1364,7 +1376,7 @@
           "pts": 10
         },
         {
-          "pos": 14,
+          "pos": 15,
           "team": "AJ Auxerre",
           "p": 10,
           "w": 3,
@@ -1376,7 +1388,7 @@
           "pts": 10
         },
         {
-          "pos": 15,
+          "pos": 16,
           "team": "Le Mans FC",
           "p": 10,
           "w": 1,
@@ -1388,7 +1400,7 @@
           "pts": 8
         },
         {
-          "pos": 16,
+          "pos": 17,
           "team": "Angers SCO",
           "p": 10,
           "w": 2,
@@ -1400,27 +1412,15 @@
           "pts": 8
         },
         {
-          "pos": 17,
-          "team": "ESTAC Troyes",
-          "p": 10,
-          "w": 2,
-          "d": 2,
-          "l": 6,
-          "gf": 7,
-          "ga": 17,
-          "gd": -10,
-          "pts": 8
-        },
-        {
           "pos": 18,
           "team": "Le Havre AC",
-          "p": 10,
+          "p": 11,
           "w": 0,
           "d": 2,
-          "l": 8,
-          "gf": 9,
-          "ga": 22,
-          "gd": -13,
+          "l": 9,
+          "gf": 10,
+          "ga": 25,
+          "gd": -15,
           "pts": 2
         }
       ],
@@ -1451,6 +1451,11 @@
           "goals": 6
         },
         {
+          "player": "Josh Maja",
+          "team": "Le Havre AC",
+          "goals": 5
+        },
+        {
           "player": "Ludovic Ajorque",
           "team": "Brest",
           "goals": 5
@@ -1469,14 +1474,9 @@
           "player": "Boulaye Dia",
           "team": "Stade Rennais",
           "goals": 5
-        },
-        {
-          "player": "Gessime Yassine",
-          "team": "RC Strasbourg Alsace",
-          "goals": 4
         }
       ],
-      "meta": "Ligue 1 2026-27 table: Paris Saint-Germain lead with 23 points, Lille OSC 21, Paris FC 20 — Lassine Sinayoko is the top scorer with 9 goals; Matchweek 11 — 20–22 November 2026 and results."
+      "meta": "Ligue 1 2026-27 table: Paris Saint-Germain lead with 23 points, Lille OSC 21, Paris FC 20 — Lassine Sinayoko is the top scorer with 9 goals; Matchweek 12 — 21–22 November 2026 and results."
     },
     {
       "id": "botola",
@@ -1737,5 +1737,5 @@
       "meta": "Botola Pro 2026-27 table: Kawkab Marrakech lead with 16 points, CODM Meknès 14, Wydad AC 14 — Imad Riahi is the top scorer with 6 goals; Round 8 — resumes Friday 27 November 2026 (LNFP decision); matches of clubs in African competitions postponed further and results."
     }
   ],
-  "note": "Full tables verified for every league (last checked Thursday 19 November 2026). Source: ESPN + FRMF.ma for Botola Pro."
+  "note": "Full tables verified for every league (last checked Saturday 21 November 2026). Source: ESPN + FRMF.ma for Botola Pro."
 }
