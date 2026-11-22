@@ -828,8 +828,8 @@ def main(ar_dir=None, en_dir=None, do_build=True):
     do_build: إعادة البناء عبر tools/build-en.py (الكرون قد يبني بنفسه)."""
     ar_dir = ar_dir or DATA
     en_dir = en_dir or DATA
-    old_leagues = load_json(os.path.join(DATA, "leagues.json"))
-    old_fx = load_json(os.path.join(DATA, "fixtures.json"))
+    old_leagues = load_json(os.path.join(ar_dir, "leagues.json"))
+    old_fx = load_json(os.path.join(ar_dir, "fixtures.json"))
     old_by_id = {l["id"]: l for l in old_leagues["leagues"]}
     try:
         old_en = load_json(os.path.join(en_dir, "leagues-en.json"))
