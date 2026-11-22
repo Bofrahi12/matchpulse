@@ -1,18 +1,18 @@
 {
-  "note": "CPAlead offers already running on CineScope (verified live 2026-11-18, order: Hidden Gems, Free VPN, CapCut Pro, Surveys). Tracking links copied verbatim from memory/2026-11-18.md — CPAlead uses a different redirect domain per offer (qckclk / cdndn / directcpi). Never edit a link by hand; take new links only from the CPAlead dashboard. #ad disclosure is shown with every offer.",
+  "note": "CPAlead offers synced by cpalead-offers-sync.py from the live Offers API feed (pub 3371268). Order: Tap Dash — Play on Windows, Free VPN for Windows, CapCut Pro — 7-Day Trial on PC, Crunchyroll Free Trial. Tracking links copied verbatim from the API feed — never edit a link by hand. #ad disclosure is shown with every offer.",
   "offers": [
     {
-      "blurb": "Install the app and discover hidden gems — no forms, just install and open.",
-      "cap": "40/day",
-      "cta": "Get the app",
-      "device": "iPhone · iOS 15.1+",
-      "geo": "CA / GB / US",
-      "id": "hidden-gems",
-      "name": "Discover Hidden Gems",
-      "payout": "$0.39 per install",
-      "rank": 1,
+      "id": "tap-dash",
+      "name": "Tap Dash — Play on Windows",
+      "blurb": "Install Tap Dash on Windows and open it once — that's the whole task.",
+      "cap": "100/day",
+      "cta": "Install & play",
+      "device": "Windows desktop",
+      "geo": "US only",
+      "payout": "$1.56",
       "tag": "Featured",
-      "url": "https://www.qckclk.com/view.php?id=5547390&pub=3371268"
+      "rank": 1,
+      "url": "https://www.qckclk.com/view.php?id=5547063&pub=3371268&_src=api&_src_sig=6b7fcee40e82897ce4e248d4e010dba67fd99ab7838350b17f39ce9a74e1b3c2"
     },
     {
       "blurb": "Download the free VPN for Windows and browse privately.",
@@ -41,20 +41,20 @@
       "url": "https://www.directcpi.com/view.php?id=5543635&pub=3371268"
     },
     {
-      "blurb": "Answer 3 quick surveys and earn your reward.",
-      "cap": "20/day",
-      "cta": "Start now",
+      "id": "crunchyroll-trial",
+      "name": "Crunchyroll Free Trial",
+      "blurb": "Sign up for a Crunchyroll free trial and watch your first stream — new users only.",
+      "cap": "No daily cap",
+      "cta": "Start free trial",
       "device": "All devices",
-      "geo": "AU / CA / GB / US",
-      "id": "complete-surveys",
-      "name": "Complete 3 Surveys",
-      "payout": "$1.56",
+      "geo": "GB only",
+      "payout": "$1.37",
+      "tag": "For movie fans",
       "rank": 4,
-      "tag": "Quick reward",
-      "url": "https://www.qckclk.com/view.php?id=5547288&pub=3371268"
+      "url": "https://www.akamaicdn.org/view.php?id=5547360&pub=3371268&_src=api&_src_sig=5871fb9a87f9c20963dd5a518c04c2f63ef0abcfc9f57a533089508274d62920"
     }
   ],
-  "updated": "2026-11-19",
+  "updated": "2026-11-22",
   "mobidea_smartlink": {
     "enabled": true,
     "url": "https://www.avoidthecroud.help/?sl=6169509-59f14",

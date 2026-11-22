@@ -2477,7 +2477,7 @@ def offers_page_html():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sponsored offers &amp; rewards | MatchPulse</title>
-<meta name="description" content="Free sponsored offers for MatchPulse readers: free VPN for Windows, CapCut Pro trial, surveys and more. #ad">
+<meta name="description" content="Free sponsored offers for MatchPulse readers: Tap Dash — Play on Windows, Free VPN for Windows, CapCut Pro — 7-Day Trial on PC, Crunchyroll Free Trial and more. #ad">
 <link rel="canonical" href="{BASE}/offers.html">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
